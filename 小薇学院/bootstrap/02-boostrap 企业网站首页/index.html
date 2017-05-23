@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>bootstrap 实现企业网站首页| 镜心书社</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">
+			<img src="http://on891bjlf.bkt.clouddn.com/icon/favicon.ico" alt="Brand" >
+	      </a>
+
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">树屋</a></li>
+	        <li><a href="#">树屋</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">书架 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	         <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">电影 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">音乐 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACG <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">体育 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">编程 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">推荐</a></li>
+	            <li><a href="#">特价</a></li>
+	            <li><a href="#">书单</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">新书</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">排行榜</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+		
+
+			<ul class="c-header__nav-timepot nav navbar-nav navbar-right">
+		        <li>
+		            <a href="#" target="_blank" title="log in" class="">注册</a>
+		        </li>
+		        <li>
+		            <a href="#" target="_blank" title="sign up" class="">登录</a>
+		        </li>
+		        
+		    </ul>
+	      <!-- <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Link</a></li>
+	        <li><button type="submit" class="btn btn-default">登录</button></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul> -->
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+  <div id="home-recommend"> 
+   <div class="container fixed-layout cf"> 
+    <div class="col col-main main"> 
+     <div class="section main-section main-ads-section without-border"> 
+
+    
+      <div class="carousel slide" id="carousel-example-generic" data-ride="carousel"> 
+       
+
+
+ <!-- 轮播（Carousel）指标 -->
+
+       <ol class="carousel-indictator"> 
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+        <li data-target="#carousel-example-generic" data-slide-to="1" ></li> 
+        <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+       </ol> 
+
+
+ 
+	      <!-- <div class="carousel slide" style="width: 742px;"> 
+	        <div class="slide-list" style="width: 2226px; left: -742px;">
+	         <ul class="list ads-list slide-item" style="width: 742px;"> 
+	          <a href="/bundles/1475"> <li> 
+	            <div class="image-wrap"> 
+	             <img class="cover with-default" data-is_fullwidth="true" data-src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="cover" src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" style="width: 100%; height: 100%; display: inline;" /> 
+	            </div> </li> </a> 
+	         </ul> 
+
+
+	         <ul class="list ads-list slide-item" style="width: 742px;"> 
+	          <a href="/bundles/1475"> <li> 
+	            <div class="image-wrap"> 
+	             <img class="cover with-default" data-is_fullwidth="true" data-src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="cover" src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" style="width: 100%; height: 100%; display: inline;" /> 
+	            </div> </li> </a> 
+	         </ul> 
+
+
+	         <ul class="list ads-list slide-item" style="width: 742px;"> 
+	          <a href="/bundles/1475"> <li> 
+	            <div class="image-wrap"> 
+	             <img class="cover with-default" data-is_fullwidth="true" data-src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="cover" src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" style="width: 100%; height: 100%; display: inline;" /> 
+	            </div> </li> </a> 
+	         </ul>
+	        </div> 
+          </div>  -->
+<!-- 轮播（Carousel）项目 -->
+		 <div class="carousel-inner" role="listbox">
+	        <div class="item active">
+	            <img src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="First slide">
+	        </div>
+	        <div class="item">
+	            <img src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="Second slide">
+	        </div>
+	        <div class="item">
+	            <img src="https://img2.justing.net.cn/28de478f7c1f47a946d93471ec8743fc_l.jpg" alt="Third slide">
+	        </div>
+    	 </div>
+<!-- 轮播（Carousel）导航 -->
+       <!-- <a class="carousel-control left" href="javascript:void(0);"> <img src="https://static.justing.net.cn/static/-/web/img/ad_slide_prev.5a34493e.png" alt="left" /> </a> 
+       <a class="carousel-control right" href="javascript:void(0);"> <img src="https://static.justing.net.cn/static/-/web/img/ad_slide_next.d671f2a1.png" alt="right" /> </a> --> 
+       
+       <!-- 上面使用的img不推荐使用，不利于页面优化，尤其移动端 -->
+		
+
+		<a class="carousel-control left" href="#carousel-example-generic" 
+        data-slide="prev" role="button"> <img src="https://static.justing.net.cn/static/-/web/img/ad_slide_prev.5a34493e.png" alt="left" /> 
+	    </a>
+
+
+	    <a class="carousel-control right" href="#carousel-example-generic" 
+	        data-slide="next" role="button">&rsaquo;
+	    </a>
+		
+		<!-- 以上是两种不同的方式表示左右按钮 -->
+
+
+
+      </div>
+      <!--/.ads-slide--> 
+     
+
+     </div> 
+     <div class="section main-section main-newest-books-section"> 
+      <div class="slide main-section-slide newest-books-slide"> 
+       <h4 class="cf without-border"> <span class="title">最新图书</span> <a class="link-more" href="/discover/books/newest?category_id=35"> <span class="link-text">更多</span> <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        
+        <div class="slide-controls"> 
+         <a href="#carousel-example-generic;" class="prev"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow_active.4c4b0936.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" alt="left" /> </a> 
+         <a href="#carousel-example-generic;" class="next"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow_active.53ff04c0.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" alt="right" /> </a> 
+        </div> </h4> 
+
+
+       <div class="carousel" style="width: 742px;"> 
+        <div class="slide-list" style="width: 4452px; left: -742px;">
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1477" data-book_detail_url="/books/1477/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1477/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.在《隐藏的逻辑》一书中，作者布坎南告诉我们，在人类社会正在上演一场“量子革命”。物理学法则开始为 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1477/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/6b39671fb75a909dbb5c58760e056476_s.jpg" alt="cover" src="https://img2.justing.net.cn/6b39671fb75a909dbb5c58760e056476_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1477/audios"> </a>
+             <a class="text name" href="/books/1477/audios"> 隐藏的逻辑 </a> 
+             <div class="text author-info">
+               马克&middot;布坎南 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1396" data-book_detail_url="/books/1396/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1396/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是日本导演黑泽明的自传散文集，在这本书中，黑泽明对于自己过去的人生经历没有丝毫的隐瞒，用一篇 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1396/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/6961bccaa2660df7389b3a4e1d595a88_s.jpg" alt="cover" src="https://img2.justing.net.cn/6961bccaa2660df7389b3a4e1d595a88_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1396/audios"> </a>
+             <a class="text name" href="/books/1396/audios"> 蛤蟆的油 </a> 
+             <div class="text author-info">
+               黑泽明 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1387" data-book_detail_url="/books/1387/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1387/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本书是将凤凰卫视曾经的读书节目《开卷八分钟》中的精华选编成册。主要主讲人梁文道品味独到，是广为人 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1387/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/e6acd95afd76bc85503b03dbbeb21e9b_s.jpg" alt="cover" src="https://img2.justing.net.cn/e6acd95afd76bc85503b03dbbeb21e9b_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1387/audios"> </a>
+             <a class="text name" href="/books/1387/audios"> 我读 </a> 
+             <div class="text author-info">
+               梁文道 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1408" data-book_detail_url="/books/1408/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1408/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是一本关于中国饮食文化的随笔集，在这本书中有各种各样的与美食相关的小故事，作者分别从历史和社 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1408/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/75eedb573c9495c590edb8a421c9246a_s.jpg" alt="cover" src="https://img2.justing.net.cn/75eedb573c9495c590edb8a421c9246a_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1408/audios"> </a>
+             <a class="text name" href="/books/1408/audios"> 碗里江山 </a> 
+             <div class="text author-info">
+               二毛 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1454" data-book_detail_url="/books/1454/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1454/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《从俾斯麦到希特勒》回顾了从普鲁士王国的“铁血宰相”俾斯麦如何创建德意志帝国，直到希特勒的第三帝 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1454/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/1da2dc999f204a57252c9f9d87fca352_s.jpg" alt="cover" src="https://img2.justing.net.cn/1da2dc999f204a57252c9f9d87fca352_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1454/audios"> </a>
+             <a class="text name" href="/books/1454/audios"> 从俾斯麦到希特 … </a> 
+             <div class="text author-info">
+               塞巴斯蒂安&middot;哈夫讷 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1426" data-book_detail_url="/books/1426/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1426/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《重新发现市场》中描写了很多大大小小、形态各异的市场：从荷兰的鲜花市场到纽约证券交易所，从亚马逊 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1426/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/51b2e481adbc9b1f8a8e4a9553ed786c_s.jpg" alt="cover" src="https://img2.justing.net.cn/51b2e481adbc9b1f8a8e4a9553ed786c_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1426/audios"> </a>
+             <a class="text name" href="/books/1426/audios"> 重新发现市场 </a> 
+             <div class="text author-info">
+               约翰&middot;麦克米兰 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1487" data-book_detail_url="/books/1487/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1487/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《十一种孤独》以冷峻的笔触描写了美国二战后五六十年代普通纽约人的生活，写了十一种孤独的人生，主人 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1487/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/8f33f0aa9fa32ba85e3de36c08a2f9f5_s.jpg" alt="cover" src="https://img2.justing.net.cn/8f33f0aa9fa32ba85e3de36c08a2f9f5_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1487/audios"> </a>
+             <a class="text name" href="/books/1487/audios"> 十一种孤独 </a> 
+             <div class="text author-info">
+               理查德&middot;耶茨 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1484" data-book_detail_url="/books/1484/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1484/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、这本书是张鸣的一本历史随笔，基本可以分为两个部分。一部分是从历史中的一些鸡毛蒜皮的小事说起，从而 … </p> 
+               <span class="price-info"> 5.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1484/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/75ec34f66c8e8694af4ce8e84b44a4a4_s.jpg" alt="cover" src="https://img2.justing.net.cn/75ec34f66c8e8694af4ce8e84b44a4a4_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1484/audios"> </a>
+             <a class="text name" href="/books/1484/audios"> 大国的虚与实 </a> 
+             <div class="text author-info">
+               张鸣 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1472" data-book_detail_url="/books/1472/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1472/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《坏世界研究:作为第一哲学的政治哲学》讨论了决定人们命运的制度、自由、权利和权力，这《坏世界研究 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1472/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/413193840a0c35b1b8f83d2d39addf90_s.jpg" alt="cover" src="https://img2.justing.net.cn/413193840a0c35b1b8f83d2d39addf90_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1472/audios"> </a>
+             <a class="text name" href="/books/1472/audios"> 坏世界研究：作 … </a> 
+             <div class="text author-info">
+               赵汀阳 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1489" data-book_detail_url="/books/1489/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1489/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本书共分为14个大章节，这十四个大章节，相互独立又互相关联，将中国古代的文化知识常识全方位的展现 … </p> 
+               <span class="price-info"> 4.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1489/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/9db0a6fef85f18f584aab66d9e007845_s.jpg" alt="cover" src="https://img2.justing.net.cn/9db0a6fef85f18f584aab66d9e007845_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1489/audios"> </a>
+             <a class="text name" href="/books/1489/audios"> 中国古代文化常 … </a> 
+             <div class="text author-info">
+               王力 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1485" data-book_detail_url="/books/1485/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1485/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本文是阿西莫夫的一个短篇，虽然仍是科幻小说，但在故事上并没有特别精彩刺激的地方，关键是对终极问题 … </p> 
+               <span class="price-info"> 2.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1485/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/c5fb9e31dfbf8542246b88b3c4b62785_s.jpg" alt="cover" src="https://img2.justing.net.cn/c5fb9e31dfbf8542246b88b3c4b62785_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1485/audios"> </a>
+             <a class="text name" href="/books/1485/audios"> 最后的问题 </a> 
+             <div class="text author-info">
+               艾萨克&middot;阿西莫夫 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1488" data-book_detail_url="/books/1488/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1488/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《为什么美国没有社会主义》一书是20世纪初驰名世界的德国国民经济学家、社会学家桑巴特的代表作之一 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1488/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/15782dd803f69c5ed4d95778bb4bae65_s.jpg" alt="cover" src="https://img2.justing.net.cn/15782dd803f69c5ed4d95778bb4bae65_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1488/audios"> </a>
+             <a class="text name" href="/books/1488/audios"> 为什么美国没有 … </a> 
+             <div class="text author-info">
+               维尔纳&middot;桑巴特 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1479" data-book_detail_url="/books/1479/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1479/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、秦晖早期的一个中篇，后来也曾做过一个演讲，意图说明文化决定论的种种困境； 2、秦晖，清华大 … </p> 
+               <span class="price-info"> 2.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1479/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/fb57854890fd2d76915da84033cfc7e4_s.jpg" alt="cover" src="https://img2.justing.net.cn/fb57854890fd2d76915da84033cfc7e4_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1479/audios"> </a>
+             <a class="text name" href="/books/1479/audios"> 文化决定论的贫 … </a> 
+             <div class="text author-info">
+               秦晖 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1478" data-book_detail_url="/books/1478/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1478/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、看了很多成功学，发现自己仍然原地踏步；读了很多心灵励志，回到生活发现自己仍然没变。原来，那些书讲 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1478/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/e58acc0241683c1ae19fc974666de2b9_s.jpg" alt="cover" src="https://img2.justing.net.cn/e58acc0241683c1ae19fc974666de2b9_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1478/audios"> </a>
+             <a class="text name" href="/books/1478/audios"> 心理学了没 </a> 
+             <div class="text author-info">
+               林肇贤 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1452" data-book_detail_url="/books/1452/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1452/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是一本历史随笔集，作者用看似闲谈似得语言通过对一些历史小故事的记述意图展示宏大的时代背景，将 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1452/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/4d64fc91ca0f48eebd05e9f85528e475_s.jpg" alt="cover" src="https://img2.justing.net.cn/4d64fc91ca0f48eebd05e9f85528e475_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1452/audios"> </a>
+             <a class="text name" href="/books/1452/audios"> 此史有关风与月 </a> 
+             <div class="text author-info">
+               张明扬 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1306" data-book_detail_url="/books/1306/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1306/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《社交天性》是社会心理学家马修&middot;利伯曼解读人类“社会脑”的权威之作，它告诉我们为什么在充满合作与 … </p> 
+               <span class="price-info"> 18.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1306/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/5d4e3303244aa0a4c4d75834f862ad4c_s.jpg" alt="cover" src="https://img2.justing.net.cn/5d4e3303244aa0a4c4d75834f862ad4c_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1306/audios"> </a>
+             <a class="text name" href="/books/1306/audios"> 社交天性 </a> 
+             <div class="text author-info">
+               马修&middot;利伯曼 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1467" data-book_detail_url="/books/1467/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1467/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、历史应该是有趣的，这就是它本来的面目！国家的机密为什么会和一口铜锅有关？古人为什么不养老虎当宠物 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1467/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/fc9dfa79112fa2ab887ee4c5bf99208a_s.jpg" alt="cover" src="https://img2.justing.net.cn/fc9dfa79112fa2ab887ee4c5bf99208a_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1467/audios"> </a>
+             <a class="text name" href="/books/1467/audios"> 哇，历史原来可 … </a> 
+             <div class="text author-info">
+               林欣浩 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1483" data-book_detail_url="/books/1483/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1483/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本书讲了很多和皇陵有关的事，有的是传说，有的是历史，行文不深，严谨性有所欠缺，但想有个初步了解的 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1483/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/f7605b5b6ab83686c27554bccfe6bf3d_s.jpg" alt="cover" src="https://img2.justing.net.cn/f7605b5b6ab83686c27554bccfe6bf3d_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1483/audios"> </a>
+             <a class="text name" href="/books/1483/audios"> 来龙去脉：历代 … </a> 
+             <div class="text author-info">
+               何木风 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1402" data-book_detail_url="/books/1402/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1402/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是一本国际关系学的教科书，简明扼要的概括了国际关系中一些基本问题，为读者们树立起了关于国际事 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1402/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/894c8b3292f17c1e8bb71f243484694a_s.jpg" alt="cover" src="https://img2.justing.net.cn/894c8b3292f17c1e8bb71f243484694a_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1402/audios"> </a>
+             <a class="text name" href="/books/1402/audios"> 理解国际冲突 </a> 
+             <div class="text author-info">
+               小约瑟夫&middot;奈 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1481" data-book_detail_url="/books/1481/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1481/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本文是周其仁的一个演讲，简单回顾了他的成长经历。 2.周其仁：北京大学国家发展研究院（前身 … </p> 
+               <span class="price-info"> 1.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1481/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/147a3c7f33488b034fa944621cb5c886_s.jpg" alt="cover" src="https://img2.justing.net.cn/147a3c7f33488b034fa944621cb5c886_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1481/audios"> </a>
+             <a class="text name" href="/books/1481/audios"> 成为真实世界的 … </a> 
+             <div class="text author-info">
+               周其仁 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1477" data-book_detail_url="/books/1477/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1477/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.在《隐藏的逻辑》一书中，作者布坎南告诉我们，在人类社会正在上演一场“量子革命”。物理学法则开始为 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1477/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/6b39671fb75a909dbb5c58760e056476_s.jpg" alt="cover" src="https://img2.justing.net.cn/6b39671fb75a909dbb5c58760e056476_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1477/audios"> </a>
+             <a class="text name" href="/books/1477/audios"> 隐藏的逻辑 </a> 
+             <div class="text author-info">
+               马克&middot;布坎南 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1396" data-book_detail_url="/books/1396/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1396/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是日本导演黑泽明的自传散文集，在这本书中，黑泽明对于自己过去的人生经历没有丝毫的隐瞒，用一篇 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1396/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/6961bccaa2660df7389b3a4e1d595a88_s.jpg" alt="cover" src="https://img2.justing.net.cn/6961bccaa2660df7389b3a4e1d595a88_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1396/audios"> </a>
+             <a class="text name" href="/books/1396/audios"> 蛤蟆的油 </a> 
+             <div class="text author-info">
+               黑泽明 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1387" data-book_detail_url="/books/1387/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1387/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本书是将凤凰卫视曾经的读书节目《开卷八分钟》中的精华选编成册。主要主讲人梁文道品味独到，是广为人 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1387/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/e6acd95afd76bc85503b03dbbeb21e9b_s.jpg" alt="cover" src="https://img2.justing.net.cn/e6acd95afd76bc85503b03dbbeb21e9b_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1387/audios"> </a>
+             <a class="text name" href="/books/1387/audios"> 我读 </a> 
+             <div class="text author-info">
+               梁文道 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1408" data-book_detail_url="/books/1408/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1408/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1.本书是一本关于中国饮食文化的随笔集，在这本书中有各种各样的与美食相关的小故事，作者分别从历史和社 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1408/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/75eedb573c9495c590edb8a421c9246a_s.jpg" alt="cover" src="https://img2.justing.net.cn/75eedb573c9495c590edb8a421c9246a_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1408/audios"> </a>
+             <a class="text name" href="/books/1408/audios"> 碗里江山 </a> 
+             <div class="text author-info">
+               二毛 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1454" data-book_detail_url="/books/1454/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1454/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《从俾斯麦到希特勒》回顾了从普鲁士王国的“铁血宰相”俾斯麦如何创建德意志帝国，直到希特勒的第三帝 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1454/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/1da2dc999f204a57252c9f9d87fca352_s.jpg" alt="cover" src="https://img2.justing.net.cn/1da2dc999f204a57252c9f9d87fca352_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1454/audios"> </a>
+             <a class="text name" href="/books/1454/audios"> 从俾斯麦到希特 … </a> 
+             <div class="text author-info">
+               塞巴斯蒂安&middot;哈夫讷 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 newest-books-list-col5"> 
+           <li class="item" data-book_id="1426" data-book_detail_url="/books/1426/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1426/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《重新发现市场》中描写了很多大大小小、形态各异的市场：从荷兰的鲜花市场到纽约证券交易所，从亚马逊 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1426/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/51b2e481adbc9b1f8a8e4a9553ed786c_s.jpg" alt="cover" src="https://img2.justing.net.cn/51b2e481adbc9b1f8a8e4a9553ed786c_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1426/audios"> </a>
+             <a class="text name" href="/books/1426/audios"> 重新发现市场 </a> 
+             <div class="text author-info">
+               约翰&middot;麦克米兰 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1487" data-book_detail_url="/books/1487/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1487/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《十一种孤独》以冷峻的笔触描写了美国二战后五六十年代普通纽约人的生活，写了十一种孤独的人生，主人 … </p> 
+               <span class="price-info"> 8.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1487/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/8f33f0aa9fa32ba85e3de36c08a2f9f5_s.jpg" alt="cover" src="https://img2.justing.net.cn/8f33f0aa9fa32ba85e3de36c08a2f9f5_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1487/audios"> </a>
+             <a class="text name" href="/books/1487/audios"> 十一种孤独 </a> 
+             <div class="text author-info">
+               理查德&middot;耶茨 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1484" data-book_detail_url="/books/1484/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1484/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、这本书是张鸣的一本历史随笔，基本可以分为两个部分。一部分是从历史中的一些鸡毛蒜皮的小事说起，从而 … </p> 
+               <span class="price-info"> 5.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1484/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/75ec34f66c8e8694af4ce8e84b44a4a4_s.jpg" alt="cover" src="https://img2.justing.net.cn/75ec34f66c8e8694af4ce8e84b44a4a4_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1484/audios"> </a>
+             <a class="text name" href="/books/1484/audios"> 大国的虚与实 </a> 
+             <div class="text author-info">
+               张鸣 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1472" data-book_detail_url="/books/1472/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1472/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、《坏世界研究:作为第一哲学的政治哲学》讨论了决定人们命运的制度、自由、权利和权力，这《坏世界研究 … </p> 
+               <span class="price-info"> 12.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1472/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/413193840a0c35b1b8f83d2d39addf90_s.jpg" alt="cover" src="https://img2.justing.net.cn/413193840a0c35b1b8f83d2d39addf90_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1472/audios"> </a>
+             <a class="text name" href="/books/1472/audios"> 坏世界研究：作 … </a> 
+             <div class="text author-info">
+               赵汀阳 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1489" data-book_detail_url="/books/1489/audios"> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/1489/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 1、本书共分为14个大章节，这十四个大章节，相互独立又互相关联，将中国古代的文化知识常识全方位的展现 … </p> 
+               <span class="price-info"> 4.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/1489/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/9db0a6fef85f18f584aab66d9e007845_s.jpg" alt="cover" src="https://img2.justing.net.cn/9db0a6fef85f18f584aab66d9e007845_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/1489/audios"> </a>
+             <a class="text name" href="/books/1489/audios"> 中国古代文化常 … </a> 
+             <div class="text author-info">
+               王力 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section main-section main-recommends-books-section"> 
+      <div class="slide main-section-slide recommends-books-slide"> 
+       <h4 class="cf without-border"> <span class="title">推荐图书</span> <a class="link-more" href="/home/recommend/books"> <span class="link-text">更多</span> <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        <div class="slide-controls"> 
+         <a href="javascript:void(0);" class="prev"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow_active.4c4b0936.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" alt="left" /> </a> 
+         <a href="javascript:void(0);" class="next"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow_active.53ff04c0.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" alt="right" /> </a> 
+        </div> </h4> 
+       <div class="carousel" style="width: 742px;"> 
+        <div class="slide-list" style="width: 4452px; left: -742px;">
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="1340"> <a href="/books/1340/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/32187e54f1575fa0c0d3f8280b35ec1c_s.jpg" data-src="https://img2.justing.net.cn/32187e54f1575fa0c0d3f8280b35ec1c_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1340/audios"> 《你永远都无法叫醒一 … </a> 
+             <div class="text desc">
+               在一个乌烟瘴气的喧嚣迷茫时代，你依然可以选择不止做个“好 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1338"> <a href="/books/1338/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/131642b14e5c0c0b87657053965bea65_s.jpg" data-src="https://img2.justing.net.cn/131642b14e5c0c0b87657053965bea65_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1338/audios"> 《老人与海》 </a> 
+             <div class="text desc">
+               海明威的经典之作。 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1312"> <a href="/books/1312/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/31c4807a7641f3fe0fa836c660dd57c3_s.jpg" data-src="https://img2.justing.net.cn/31c4807a7641f3fe0fa836c660dd57c3_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1312/audios"> 《哪来的天才》 </a> 
+             <div class="text desc">
+               是什么成就了天才？是本书要为读者揭晓的最大秘密。 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="577"> <a href="/books/577/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/667bdc7b069fe699a904574208340d12_s.jpg" data-src="https://img2.justing.net.cn/667bdc7b069fe699a904574208340d12_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/577/audios"> 《新闻抄袭历史》 </a> 
+             <div class="text desc">
+               本书把这些在历史上已经上演过，而今天依然在不断播放的镜头 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1021"> <a href="/books/1021/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/ce93accb51785ae554c0839c17efd718_s.jpg" data-src="https://img2.justing.net.cn/ce93accb51785ae554c0839c17efd718_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1021/audios"> 《刀锋》 </a> 
+             <div class="text desc">
+               一战期间，拉里目睹了战友为救他而牺牲的全过程，这让他对人 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="551"> <a href="/books/551/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/0f84b22c0bf658b62c3805abbb4b9384_s.jpg" data-src="https://img2.justing.net.cn/0f84b22c0bf658b62c3805abbb4b9384_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/551/audios"> 《希区柯克悬念故事》 </a> 
+             <div class="text desc">
+               本书为希区柯克悬念故事精选。这些作品以人的紧张、焦虑、窥 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="85"> <a href="/books/85/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/855baa80516f439f6002c85ef598c46e_s.jpg" data-src="https://img2.justing.net.cn/855baa80516f439f6002c85ef598c46e_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/85/audios"> 《大法官说了算》 </a> 
+             <div class="text desc">
+               本书通过大量紧贴美国大众生活的真实案例，展现高院的发展过 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1032"> <a href="/books/1032/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/43ddfa33dc4b7dadfe2e697bf734628e_s.jpg" data-src="https://img2.justing.net.cn/43ddfa33dc4b7dadfe2e697bf734628e_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1032/audios"> 《中国人为什么看不起 … </a> 
+             <div class="text desc">
+               本书从历史与现实的细节着笔，观察、分析中国政治体制，评论 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1010"> <a href="/books/1010/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/925bc6aecf2d8cac9ab83bc8f40769f0_s.jpg" data-src="https://img2.justing.net.cn/925bc6aecf2d8cac9ab83bc8f40769f0_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1010/audios"> 《推理之门由此进》 </a> 
+             <div class="text desc">
+               作者杨照甄选推理小说经典，以独树一帜的见解，提供了一把打 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="550"> <a href="/books/550/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/7a11efaf2f2a2d50988dd20b4a3bce9a_s.jpg" data-src="https://img2.justing.net.cn/7a11efaf2f2a2d50988dd20b4a3bce9a_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/550/audios"> 《西洋史》 </a> 
+             <div class="text desc">
+               女性写史的典范，知性与理性的完美结合。中国人了解欧洲历史 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="957"> <a href="/books/957/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/61450575d015a1e009f9de2b93057ca8_s.jpg" data-src="https://img2.justing.net.cn/61450575d015a1e009f9de2b93057ca8_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/957/audios"> 《健康的日子》 </a> 
+             <div class="text desc">
+               这个演员写的书，和其他人的不太一样。 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="485"> <a href="/books/485/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/82a7df89d80b7c89ddce840163ce9696_s.jpg" data-src="https://img2.justing.net.cn/82a7df89d80b7c89ddce840163ce9696_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/485/audios"> 《拖延心理学》 </a> 
+             <div class="text desc">
+               拖延不会瞬间消失，但是读完这本书，你将很有希望成为一个越 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="1340"> <a href="/books/1340/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/32187e54f1575fa0c0d3f8280b35ec1c_s.jpg" data-src="https://img2.justing.net.cn/32187e54f1575fa0c0d3f8280b35ec1c_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1340/audios"> 《你永远都无法叫醒一 … </a> 
+             <div class="text desc">
+               在一个乌烟瘴气的喧嚣迷茫时代，你依然可以选择不止做个“好 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1338"> <a href="/books/1338/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/131642b14e5c0c0b87657053965bea65_s.jpg" data-src="https://img2.justing.net.cn/131642b14e5c0c0b87657053965bea65_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1338/audios"> 《老人与海》 </a> 
+             <div class="text desc">
+               海明威的经典之作。 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1312"> <a href="/books/1312/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/31c4807a7641f3fe0fa836c660dd57c3_s.jpg" data-src="https://img2.justing.net.cn/31c4807a7641f3fe0fa836c660dd57c3_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1312/audios"> 《哪来的天才》 </a> 
+             <div class="text desc">
+               是什么成就了天才？是本书要为读者揭晓的最大秘密。 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-recommend-books-list-col3 recommend-books-list-col3"> 
+           <li class="item" data-book_id="577"> <a href="/books/577/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/667bdc7b069fe699a904574208340d12_s.jpg" data-src="https://img2.justing.net.cn/667bdc7b069fe699a904574208340d12_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/577/audios"> 《新闻抄袭历史》 </a> 
+             <div class="text desc">
+               本书把这些在历史上已经上演过，而今天依然在不断播放的镜头 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="1021"> <a href="/books/1021/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/ce93accb51785ae554c0839c17efd718_s.jpg" data-src="https://img2.justing.net.cn/ce93accb51785ae554c0839c17efd718_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/1021/audios"> 《刀锋》 </a> 
+             <div class="text desc">
+               一战期间，拉里目睹了战友为救他而牺牲的全过程，这让他对人 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-book_id="551"> <a href="/books/551/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" src="https://img2.justing.net.cn/0f84b22c0bf658b62c3805abbb4b9384_s.jpg" data-src="https://img2.justing.net.cn/0f84b22c0bf658b62c3805abbb4b9384_s.jpg" alt="cover" style="display: inline;" /> 
+             </div> </a> 
+            <div class="info"> 
+             <a class="text title" href="/books/551/audios"> 《希区柯克悬念故事》 </a> 
+             <div class="text desc">
+               本书为希区柯克悬念故事精选。这些作品以人的紧张、焦虑、窥 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section main-section special-books"> 
+      <div class="slide main-section-slide special-books-slide"> 
+       <h4 class="cf without-border"> <span class="title">最新特价</span> <a class="link-more" href="/home/special/newest?column_id=19"> <span class="link-text">更多</span> <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        <div class="slide-controls"> 
+         <a href="javascript:void(0);" class="prev"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow_active.4c4b0936.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" alt="left" /> </a> 
+         <a href="javascript:void(0);" class="next"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow_active.53ff04c0.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" alt="right" /> </a> 
+        </div> </h4> 
+       <div class="carousel" style="width: 742px;"> 
+        <div class="slide-list" style="width: 2226px; left: -742px;">
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 recommend-books-list-col5"> 
+           <li class="item" data-book_id="594" data-book_detail_url="/books/594/audios"> <img class="special-book" src="https://static.justing.net.cn/static/-/web/img/special_books.247973b3.png" /> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/594/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 本书以全新的视角，首次开放解说中国正面抗日全史。那是个社会结构、思想经济全面动荡转型的时代，我们之所 … </p> 
+               <span class="price-info"> 64.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/594/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" alt="cover" src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/594/audios"> </a>
+             <a class="text name" href="/books/594/audios"> 一寸河山一寸血 </a> 
+             <div class="text author-info">
+               关河五十州 
+             </div> 
+             <div class="text price-info"> 
+              <del class="origin-price">
+               64.00 谷粒
+              </del> 
+              <span class="price">51.20 谷粒</span> 
+             </div> 
+            </div> </li> 
+          </ul> &nbsp;
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 recommend-books-list-col5"> 
+           <li class="item" data-book_id="594" data-book_detail_url="/books/594/audios"> <img class="special-book" src="https://static.justing.net.cn/static/-/web/img/special_books.247973b3.png" /> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/594/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 本书以全新的视角，首次开放解说中国正面抗日全史。那是个社会结构、思想经济全面动荡转型的时代，我们之所 … </p> 
+               <span class="price-info"> 64.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/594/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" alt="cover" src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/594/audios"> </a>
+             <a class="text name" href="/books/594/audios"> 一寸河山一寸血 </a> 
+             <div class="text author-info">
+               关河五十州 
+             </div> 
+             <div class="text price-info"> 
+              <del class="origin-price">
+               64.00 谷粒
+              </del> 
+              <span class="price">51.20 谷粒</span> 
+             </div> 
+            </div> </li> 
+          </ul> &nbsp;
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-books-list-col5 recommend-books-list-col5"> 
+           <li class="item" data-book_id="594" data-book_detail_url="/books/594/audios"> <img class="special-book" src="https://static.justing.net.cn/static/-/web/img/special_books.247973b3.png" /> 
+            <div class="desc-info-wrap"> 
+             <a href="/books/594/audios"> 
+              <div class="desc-info"> 
+               <p class="text desc"> 本书以全新的视角，首次开放解说中国正面抗日全史。那是个社会结构、思想经济全面动荡转型的时代，我们之所 … </p> 
+               <span class="price-info"> 64.00 谷粒 </span> 
+              </div> </a> 
+            </div>
+            <!--/.desc-info-wrap--> <a href="/books/594/audios"> 
+             <div class="cover-wrap"> 
+              <img class="cover with-default" data-default_img_type="rectangle_small" data-src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" alt="cover" src="https://img2.justing.net.cn/b1b7377c92e8ff45deda813b06e3caab_s.jpg" style="display: inline;" /> 
+             </div> </a>
+            <div class="info">
+             <a href="/books/594/audios"> </a>
+             <a class="text name" href="/books/594/audios"> 一寸河山一寸血 </a> 
+             <div class="text author-info">
+               关河五十州 
+             </div> 
+             <div class="text price-info"> 
+              <del class="origin-price">
+               64.00 谷粒
+              </del> 
+              <span class="price">51.20 谷粒</span> 
+             </div> 
+            </div> </li> 
+          </ul> &nbsp;
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section main-section main-ads-section"> 
+      <span class="text">没有任何内容</span> 
+     </div> 
+     <div class="section main-section main-newest-essaies-section"> 
+      <div class="slide main-section-slide newest-essaies-slide"> 
+       <h4 class="cf without-border"> <span class="title">最新短文</span> <a class="link-more" href="/discover/essaies/newest?all=1"> <span class="link-text">更多</span> <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        <div class="slide-controls"> 
+         <a href="javascript:void(0);" class="prev"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow_active.4c4b0936.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" alt="left" /> </a> 
+         <a href="javascript:void(0);" class="next"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow_active.53ff04c0.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" alt="right" /> </a> 
+        </div> </h4> 
+       <div class="carousel" style="width: 742px;"> 
+        <div class="slide-list" style="width: 4452px; left: -742px;">
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="106999"> <a href="javascript:void(0);" data-href="/essaies/106999"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106999"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106999"> 在人类的感觉之 … </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="107200"> <a href="javascript:void(0);" data-href="/essaies/107200"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107200"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107200"> 祸莫大焉的手淫 </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="108993"> <a href="javascript:void(0);" data-href="/essaies/108993"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/108993"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/108993"> 压力源自不恰当 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="106891"> <a href="javascript:void(0);" data-href="/essaies/106891"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106891"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106891"> 蚊子的恋曲 </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="108990"> <a href="javascript:void(0);" data-href="/essaies/108990"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/108990"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/108990"> 童年对人的影响 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="106938"> <a href="javascript:void(0);" data-href="/essaies/106938"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106938"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106938"> 快乐就在大脑中 </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="107443"> <a href="javascript:void(0);" data-href="/essaies/107443"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107443"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107443"> 因为医师而起的 … </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109610"> <a href="javascript:void(0);" data-href="/essaies/109610"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109610"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/5ca079c1a3c74222d8a158eca6691544_s.jpg" alt="cover" src="https://img2.justing.net.cn/5ca079c1a3c74222d8a158eca6691544_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109610"> 给我的孩子们 </a> 
+             <div class="text author-info"> 
+              <span class="author">丰子恺</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109059"> <a href="javascript:void(0);" data-href="/essaies/109059"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109059"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109059"> 恋母是男人一生 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="106972"> <a href="javascript:void(0);" data-href="/essaies/106972"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106972"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106972"> 科学史上最孤独 … </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="107437"> <a href="javascript:void(0);" data-href="/essaies/107437"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107437"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107437"> 东床快婿没那么 … </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="107201"> <a href="javascript:void(0);" data-href="/essaies/107201"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107201"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107201"> 没肠肚的人 </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109395"> <a href="javascript:void(0);" data-href="/essaies/109395"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109395"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" alt="cover" src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109395"> 嗜血儿童的制造 … </a> 
+             <div class="text author-info"> 
+              <span class="author">张鸣</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109487"> <a href="javascript:void(0);" data-href="/essaies/109487"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109487"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/2a6b91f218c9fe4a526590db1e6c054f_s.jpg" alt="cover" src="https://img2.justing.net.cn/2a6b91f218c9fe4a526590db1e6c054f_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109487"> 与陌生人共乐 </a> 
+             <div class="text author-info"> 
+              <span class="author">理查德&middot;耶茨</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109482"> <a href="javascript:void(0);" data-href="/essaies/109482"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109482"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/2a6b91f218c9fe4a526590db1e6c054f_s.jpg" alt="cover" src="https://img2.justing.net.cn/2a6b91f218c9fe4a526590db1e6c054f_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109482"> 一点也不痛 </a> 
+             <div class="text author-info"> 
+              <span class="author">理查德&middot;耶茨</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="108996"> <a href="javascript:void(0);" data-href="/essaies/108996"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/108996"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/108996"> 害怕是内心最大 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109400"> <a href="javascript:void(0);" data-href="/essaies/109400"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109400"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" alt="cover" src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109400"> 中国式的死撑现 … </a> 
+             <div class="text author-info"> 
+              <span class="author">张鸣</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="106964"> <a href="javascript:void(0);" data-href="/essaies/106964"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106964"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106964"> 放血疗法的兴衰 </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109076"> <a href="javascript:void(0);" data-href="/essaies/109076"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109076"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109076"> 全职太太，美好 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109390"> <a href="javascript:void(0);" data-href="/essaies/109390"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109390"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" alt="cover" src="https://img2.justing.net.cn/c51463436a7a6c5f41b47e7caeabc7f3_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109390"> 群体性乖戾的传 … </a> 
+             <div class="text author-info"> 
+              <span class="author">张鸣</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="106999"> <a href="javascript:void(0);" data-href="/essaies/106999"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106999"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106999"> 在人类的感觉之 … </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="107200"> <a href="javascript:void(0);" data-href="/essaies/107200"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107200"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107200"> 祸莫大焉的手淫 </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="108993"> <a href="javascript:void(0);" data-href="/essaies/108993"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/108993"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/108993"> 压力源自不恰当 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="106891"> <a href="javascript:void(0);" data-href="/essaies/106891"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106891"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106891"> 蚊子的恋曲 </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="108990"> <a href="javascript:void(0);" data-href="/essaies/108990"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/108990"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/108990"> 童年对人的影响 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col5 main-essaies-list-col5 newest-essaies-list-col5"> 
+           <li class="item" data-audio_id="106938"> <a href="javascript:void(0);" data-href="/essaies/106938"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106938"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106938"> 快乐就在大脑中 </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="107443"> <a href="javascript:void(0);" data-href="/essaies/107443"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/107443"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/107443"> 因为医师而起的 … </a> 
+             <div class="text author-info"> 
+              <span class="author">苏上豪</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109610"> <a href="javascript:void(0);" data-href="/essaies/109610"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109610"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/5ca079c1a3c74222d8a158eca6691544_s.jpg" alt="cover" src="https://img2.justing.net.cn/5ca079c1a3c74222d8a158eca6691544_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109610"> 给我的孩子们 </a> 
+             <div class="text author-info"> 
+              <span class="author">丰子恺</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="109059"> <a href="javascript:void(0);" data-href="/essaies/109059"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/109059"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" alt="cover" src="https://img2.justing.net.cn/8319a20881c757bfa729dd366483798c_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/109059"> 恋母是男人一生 … </a> 
+             <div class="text author-info"> 
+              <span class="author">李子勋</span> 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="106972"> <a href="javascript:void(0);" data-href="/essaies/106972"> </a>
+            <div class="shadow">
+             <a href="javascript:void(0);" data-href="/essaies/106972"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="square_small" data-src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" alt="cover" src="https://img2.justing.net.cn/f56d194831d5295798fd49b9b4d1812b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text name" href="/essaies/106972"> 科学史上最孤独 … </a> 
+             <div class="text author-info"> 
+              <span class="author">方舟子</span> 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="section main-section main-recommend-essaies-section without-border"> 
+      <div class="slide main-section-slide recommend-essaies-slide"> 
+       <h4 class="cf without-border"> <span class="title">推荐短文</span> <a class="link-more" href="/home/recommend/essaies"> <span class="link-text">更多</span> <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        <div class="slide-controls"> 
+         <a href="javascript:void(0);" class="prev"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow_active.4c4b0936.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_left_arrow.825d4ae0.png" alt="left" /> </a> 
+         <a href="javascript:void(0);" class="next"> <img data-active_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow_active.53ff04c0.png" data-common_img="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" src="https://static.justing.net.cn/static/-/web/img/misc/main_section_slide_right_arrow.7846f972.png" alt="right" /> </a> 
+        </div> </h4> 
+       <div class="carousel" style="width: 742px;"> 
+        <div class="slide-list" style="width: 4452px; left: -742px;">
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="59309"> <a href="/essaies/59309"> </a>
+            <div class="shadow">
+             <a href="/essaies/59309"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/1bae5677c008572da845722587b4c6f4_s.jpg" alt="cover" src="https://img2.justing.net.cn/1bae5677c008572da845722587b4c6f4_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/59309"> 旅行 | 旅行的意义 </a> 
+             <div class="text desc">
+               旅行二字对于古今人类，大不相同。古代，旅游是“艰苦劳累”，今 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="101611"> <a href="/essaies/101611"> </a>
+            <div class="shadow">
+             <a href="/essaies/101611"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/e040e807765ab6a09c6b076b0a1a0bc3_s.jpg" alt="cover" src="https://img2.justing.net.cn/e040e807765ab6a09c6b076b0a1a0bc3_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/101611"> 社会 | 生命不仅是一个技 … </a> 
+             <div class="text desc">
+               医生与病人应是什么样的关系？[19′16] 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="1273"> <a href="/essaies/1273"> </a>
+            <div class="shadow">
+             <a href="/essaies/1273"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/50a3f87cbc145f0b9042476ab5e5d342_s.jpg" alt="cover" src="https://img2.justing.net.cn/50a3f87cbc145f0b9042476ab5e5d342_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/1273"> 成长 | 忠诚的层次和境界 </a> 
+             <div class="text desc">
+               企业员工的忠诚可分四种：对老板的忠诚，对公司的忠诚，对事业的 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="1963"> <a href="/essaies/1963"> </a>
+            <div class="shadow">
+             <a href="/essaies/1963"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/87882ac1e879895895210ceae41b9d57_s.jpg" alt="cover" src="https://img2.justing.net.cn/87882ac1e879895895210ceae41b9d57_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/1963"> 哲思 | 假如我有九条命 </a> 
+             <div class="text desc">
+               这是余光中老先生的设想，他打算用自己设想中的九条命去应付现实 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="60630"> <a href="/essaies/60630"> </a>
+            <div class="shadow">
+             <a href="/essaies/60630"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/129f38fd126656350e2d45c2706d0c94_s.jpg" alt="cover" src="https://img2.justing.net.cn/129f38fd126656350e2d45c2706d0c94_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/60630"> 法律 | 死刑的黄昏 </a> 
+             <div class="text desc">
+               死刑存在与否一直是个世界性的争议话题，它涉及到哲学、法学、以 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="100597"> <a href="/essaies/100597"> </a>
+            <div class="shadow">
+             <a href="/essaies/100597"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/d16f181b4db715b6d2f5e91c4d0efa48_s.jpg" alt="cover" src="https://img2.justing.net.cn/d16f181b4db715b6d2f5e91c4d0efa48_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/100597"> 故事 | 泡在酒里的老头 </a> 
+             <div class="text desc">
+               爸说：“如果让我戒了酒，就是破坏了我的生态平衡。那样活得再长 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="101280"> <a href="/essaies/101280"> </a>
+            <div class="shadow">
+             <a href="/essaies/101280"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/c82cd2b0ed8f0635450c23893fba24d6_s.jpg" alt="cover" src="https://img2.justing.net.cn/c82cd2b0ed8f0635450c23893fba24d6_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/101280"> 心理 | 我想和这个世界谈 … </a> 
+             <div class="text desc">
+               所有的希望，都只是一个梦；所有的希望，都是对当下的背叛。[2 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="102277"> <a href="/essaies/102277"> </a>
+            <div class="shadow">
+             <a href="/essaies/102277"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/0070fa77647fdd4313250227f853756b_s.jpg" alt="cover" src="https://img2.justing.net.cn/0070fa77647fdd4313250227f853756b_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/102277"> 成长 | 让孩子完成你的梦 … </a> 
+             <div class="text desc">
+               每个孩子都有独立人格和自由意志，他有权规划自己的人生。[06 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="93666"> <a href="/essaies/93666"> </a>
+            <div class="shadow">
+             <a href="/essaies/93666"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/03a2d81f10845308843429a25414d934_s.jpg" alt="cover" src="https://img2.justing.net.cn/03a2d81f10845308843429a25414d934_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/93666"> 社会 | 多研究些问题，少 … </a> 
+             <div class="text desc">
+               这篇文章掀起了学界的“问题与主义之争”，时至今日，这个问题依 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="104588"> <a href="/essaies/104588"> </a>
+            <div class="shadow">
+             <a href="/essaies/104588"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/5321854cfbdd7d73798fe7488f951f36_s.jpg" alt="cover" src="https://img2.justing.net.cn/5321854cfbdd7d73798fe7488f951f36_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/104588"> 文化 | 我们生活在巨大的 … </a> 
+             <div class="text desc">
+               世界第二大经济体，人均年收入始终在世界的九十多位和一百位之间 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="7094"> <a href="/essaies/7094"> </a>
+            <div class="shadow">
+             <a href="/essaies/7094"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/aae4af01ed37c86b1410b7534153a2c2_s.jpg" alt="cover" src="https://img2.justing.net.cn/aae4af01ed37c86b1410b7534153a2c2_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/7094"> 财经 | 伟大的公司死在哪 … </a> 
+             <div class="text desc">
+               世界级的伟大的企业都逃不过一种可怕的规律，那就是在度过成熟和 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="2013"> <a href="/essaies/2013"> </a>
+            <div class="shadow">
+             <a href="/essaies/2013"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/29462305d251aa6d6d4219ca30179301_s.jpg" alt="cover" src="https://img2.justing.net.cn/29462305d251aa6d6d4219ca30179301_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/2013"> 历史 | 最后一个投降的日 … </a> 
+             <div class="text desc">
+               1974年3月9日，广己田在他当年的上司吉见谷口少佐沉重的宣 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="59309"> <a href="/essaies/59309"> </a>
+            <div class="shadow">
+             <a href="/essaies/59309"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/1bae5677c008572da845722587b4c6f4_s.jpg" alt="cover" src="https://img2.justing.net.cn/1bae5677c008572da845722587b4c6f4_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/59309"> 旅行 | 旅行的意义 </a> 
+             <div class="text desc">
+               旅行二字对于古今人类，大不相同。古代，旅游是“艰苦劳累”，今 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="101611"> <a href="/essaies/101611"> </a>
+            <div class="shadow">
+             <a href="/essaies/101611"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/e040e807765ab6a09c6b076b0a1a0bc3_s.jpg" alt="cover" src="https://img2.justing.net.cn/e040e807765ab6a09c6b076b0a1a0bc3_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/101611"> 社会 | 生命不仅是一个技 … </a> 
+             <div class="text desc">
+               医生与病人应是什么样的关系？[19′16] 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="1273"> <a href="/essaies/1273"> </a>
+            <div class="shadow">
+             <a href="/essaies/1273"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/50a3f87cbc145f0b9042476ab5e5d342_s.jpg" alt="cover" src="https://img2.justing.net.cn/50a3f87cbc145f0b9042476ab5e5d342_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/1273"> 成长 | 忠诚的层次和境界 </a> 
+             <div class="text desc">
+               企业员工的忠诚可分四种：对老板的忠诚，对公司的忠诚，对事业的 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+         <div class="slide-item" style="width: 742px;"> 
+          <ul class="list list-col3 main-essaies-list-col3 recommend-essaies-list-col3"> 
+           <li class="item" data-audio_id="1963"> <a href="/essaies/1963"> </a>
+            <div class="shadow">
+             <a href="/essaies/1963"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/87882ac1e879895895210ceae41b9d57_s.jpg" alt="cover" src="https://img2.justing.net.cn/87882ac1e879895895210ceae41b9d57_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/1963"> 哲思 | 假如我有九条命 </a> 
+             <div class="text desc">
+               这是余光中老先生的设想，他打算用自己设想中的九条命去应付现实 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="60630"> <a href="/essaies/60630"> </a>
+            <div class="shadow">
+             <a href="/essaies/60630"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/129f38fd126656350e2d45c2706d0c94_s.jpg" alt="cover" src="https://img2.justing.net.cn/129f38fd126656350e2d45c2706d0c94_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/60630"> 法律 | 死刑的黄昏 </a> 
+             <div class="text desc">
+               死刑存在与否一直是个世界性的争议话题，它涉及到哲学、法学、以 … 
+             </div> 
+            </div> </li> 
+           <li class="item" data-audio_id="100597"> <a href="/essaies/100597"> </a>
+            <div class="shadow">
+             <a href="/essaies/100597"> </a>
+             <a href="javascript:void(0);"> <img class="play-btn" src="https://static.justing.net.cn/static/-/web/img/misc/play_btn_circle.54a0351e.png" alt="play" /> </a> 
+            </div> 
+            <div class="cover-wrap"> 
+             <img class="cover with-default" data-default_img_type="rectangle_horizontal_small" data-src="https://img2.justing.net.cn/d16f181b4db715b6d2f5e91c4d0efa48_s.jpg" alt="cover" src="https://img2.justing.net.cn/d16f181b4db715b6d2f5e91c4d0efa48_s.jpg" style="display: inline;" /> 
+            </div> 
+            <div class="info"> 
+             <a class="text title" href="/essaies/100597"> 故事 | 泡在酒里的老头 </a> 
+             <div class="text desc">
+               爸说：“如果让我戒了酒，就是破坏了我的生态平衡。那样活得再长 … 
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div>
+    <!--/.main--> 
+    <div class="col col-dashboard dashboard"> 
+     <div class="section dashboard-section"> 
+      <h4>图书领域</h4> 
+      <ul class="list common-list categories-list"> 
+       <li class="item"> <a href="/home/books/newest?all=1&amp;category_id=35"> <span class="name"> 全部图书 </span> <span class="count"> 1386 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=37"> <span class="name"> 免费 </span> <span class="count"> 102 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=4"> <span class="name"> 世界史 </span> <span class="count"> 223 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=1"> <span class="name"> 中国史 </span> <span class="count"> 251 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=21"> <span class="name"> 公民课 </span> <span class="count"> 47 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=23"> <span class="name"> 思维 </span> <span class="count"> 71 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=9"> <span class="name"> 杂谈 </span> <span class="count"> 363 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=8"> <span class="name"> 文艺 </span> <span class="count"> 153 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=20"> <span class="name"> 阅读 </span> <span class="count"> 37 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=7"> <span class="name"> 教育 </span> <span class="count"> 37 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=22"> <span class="name"> 名著 </span> <span class="count"> 23 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=13"> <span class="name"> 社会 </span> <span class="count"> 110 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=6"> <span class="name"> 商业 </span> <span class="count"> 34 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=12"> <span class="name"> 财经 </span> <span class="count"> 80 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=2"> <span class="name"> 心理 </span> <span class="count"> 63 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=18"> <span class="name"> 法律 </span> <span class="count"> 42 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=11"> <span class="name"> 人物 </span> <span class="count"> 116 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=14"> <span class="name"> 军事 </span> <span class="count"> 43 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=3"> <span class="name"> 小说 </span> <span class="count"> 150 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=15"> <span class="name"> 少儿读物 </span> <span class="count"> 20 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=16"> <span class="name"> 纪实 </span> <span class="count"> 63 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=10"> <span class="name"> 情感 </span> <span class="count"> 69 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=19"> <span class="name"> 成长 </span> <span class="count"> 52 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=17"> <span class="name"> 科普 </span> <span class="count"> 72 </span> </a> </li> 
+       <li class="item"> <a href="/home/books/newest?category_id=29"> <span class="name"> 外语 </span> <span class="count"> 24 </span> </a> </li> 
+      </ul> 
+     </div> 
+     <div class="section dashboard-section without-border"> 
+      <h4>排行榜</h4> 
+      <div class="dashboard-tabs dashboard-books-rank-tabs"> 
+       <div class="tabs-navs"> 
+        <a class="tabs-nav tabs-nav-active top-rating-tab" data-tab_for="top-rating" href="javascript:void(0);">好评</a> 
+        <span class="split">|</span> 
+        <a class="tabs-nav bestseller-tab" data-tab_for="bestseller" href="javascript:void(0);">畅销</a> 
+       </div> 
+       <div class="tabs-content tabs-content-default tabs-content-top-rating"> 
+        <ul class="list dashboard-books-rank-list"> 
+         <li data-href="/books/996/audios"> 
+          <div class="rank">
+            01 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/9641a13e83e7ccd7788c547789c4c8cc_s.jpg" alt="cover" src="https://img2.justing.net.cn/9641a13e83e7ccd7788c547789c4c8cc_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/996/audios" class="text name"> 夹边沟记事 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23322">杨显惠</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1069/audios"> 
+          <div class="rank">
+            02 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/051674822fec2c02d2bc3acb61ad5882_s.jpg" alt="cover" src="https://img2.justing.net.cn/051674822fec2c02d2bc3acb61ad5882_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1069/audios" class="text name"> 肖申克的救赎 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23483">斯蒂芬&middot;金</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1180/audios"> 
+          <div class="rank">
+            03 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/070cbcef7dcc4552b3539ad99e517b3c_s.jpg" alt="cover" src="https://img2.justing.net.cn/070cbcef7dcc4552b3539ad99e517b3c_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1180/audios" class="text name"> 我不是潘金莲 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23435">刘震云</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1255/audios"> 
+          <div class="rank">
+            04 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/bb853dfdadc8f1b90bce00efd17a6aa6_s.jpg" alt="cover" src="https://img2.justing.net.cn/bb853dfdadc8f1b90bce00efd17a6aa6_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1255/audios" class="text name"> 秦始皇 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23772">吕世浩</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/132/audios"> 
+          <div class="rank">
+            05 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/2a26d026c189c55033ecefc3e52ff8c5_s.jpg" alt="cover" src="https://img2.justing.net.cn/2a26d026c189c55033ecefc3e52ff8c5_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/132/audios" class="text name"> 动物农场 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/10385">乔治&middot;奥威尔</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1207/audios"> 
+          <div class="rank">
+            06 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/065595774acca97d9d3c7581cfd3a0d9_s.jpg" alt="cover" src="https://img2.justing.net.cn/065595774acca97d9d3c7581cfd3a0d9_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1207/audios" class="text name"> 容忍与自由 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/12045">胡适</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1278/audios"> 
+          <div class="rank">
+            07 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/8cba0e73bec84f6a8d28c563e899d2b7_s.jpg" alt="cover" src="https://img2.justing.net.cn/8cba0e73bec84f6a8d28c563e899d2b7_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1278/audios" class="text name"> 我们为什么生病 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23822">R.M.尼斯</a>
+            <a href="/authors/23823">G.C. ...</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1321/audios"> 
+          <div class="rank">
+            08 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/1f9181b89515a7a4495b8d920aed311b_s.jpg" alt="cover" src="https://img2.justing.net.cn/1f9181b89515a7a4495b8d920aed311b_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1321/audios" class="text name"> 道可道：《老子》的要义与诘难 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/22512">熊逸</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1177/audios"> 
+          <div class="rank">
+            09 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/8cf71f3a6c0e209f9a33dbefbfce32b6_s.jpg" alt="cover" src="https://img2.justing.net.cn/8cf71f3a6c0e209f9a33dbefbfce32b6_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1177/audios" class="text name"> 中国是部金融史2 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23508">陈雨露</a>
+            <a href="/authors/23509">杨忠恕</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1188/audios"> 
+          <div class="rank">
+            10 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/4dfcc94199866b1fe82b2bcc0de0555e_s.jpg" alt="cover" src="https://img2.justing.net.cn/4dfcc94199866b1fe82b2bcc0de0555e_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1188/audios" class="text name"> 卓有成效的管理者 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/22598">彼得&middot;德鲁克</a> 
+           </div> 
+          </div> </li> 
+        </ul> 
+        <div class="dashboard-link-more"> 
+         <a class="link-more" href="/home/ranklist/books/popular"> 更多 <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        </div> 
+       </div> 
+       <div class="tabs-content tabs-content-bestseller"> 
+        <ul class="list dashboard-books-rank-list"> 
+         <li data-href="/books/401/audios"> 
+          <div class="rank">
+            01 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/2b4959369ec4e480d0cc04ad1e7f90bb_s.jpg" alt="cover" src="https://img2.justing.net.cn/2b4959369ec4e480d0cc04ad1e7f90bb_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/401/audios" class="text name"> 人类简史：从动物到上帝 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/22988">尤瓦尔&middot;赫拉利</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/421/audios"> 
+          <div class="rank">
+            02 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/6a8d7cc5fc025e79e26f424270fb4e9f_s.jpg" alt="cover" src="https://img2.justing.net.cn/6a8d7cc5fc025e79e26f424270fb4e9f_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/421/audios" class="text name"> 少有人走的路 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/22418">M&middot;斯科特&middot;派克</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/442/audios"> 
+          <div class="rank">
+            03 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/e978ff40d73ac8781c88fdf12b8327bd_s.jpg" alt="cover" src="https://img2.justing.net.cn/e978ff40d73ac8781c88fdf12b8327bd_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/442/audios" class="text name"> 时间的形状 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/22426">汪洁</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/486/audios"> 
+          <div class="rank">
+            04 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/b8cf5782b799aed4503352e606bbc3c9_s.jpg" alt="cover" src="https://img2.justing.net.cn/b8cf5782b799aed4503352e606bbc3c9_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/486/audios" class="text name"> 瓦尔登湖 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/5225">梭罗</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1069/audios"> 
+          <div class="rank">
+            05 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/051674822fec2c02d2bc3acb61ad5882_s.jpg" alt="cover" src="https://img2.justing.net.cn/051674822fec2c02d2bc3acb61ad5882_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1069/audios" class="text name"> 肖申克的救赎 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/23483">斯蒂芬&middot;金</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/1032/audios"> 
+          <div class="rank">
+            06 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/4a6b5136c5dad3ed8a1ff83f764b47ef_s.jpg" alt="cover" src="https://img2.justing.net.cn/4a6b5136c5dad3ed8a1ff83f764b47ef_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/1032/audios" class="text name"> 中国人为什么看不起中国人 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/102">张鸣</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/637/audios"> 
+          <div class="rank">
+            07 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/96e8adf392801f22c97f6431b37bd3ec_s.jpg" alt="cover" src="https://img2.justing.net.cn/96e8adf392801f22c97f6431b37bd3ec_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/637/audios" class="text name"> 月亮和六便士 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/20666">毛姆</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/309/audios"> 
+          <div class="rank">
+            08 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/825b09ba7c8a8fa69b4f797cb3a5381e_s.jpg" alt="cover" src="https://img2.justing.net.cn/825b09ba7c8a8fa69b4f797cb3a5381e_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/309/audios" class="text name"> 洛克菲勒家信 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/448">洛克菲勒</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/679/audios"> 
+          <div class="rank">
+            09 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/b5eb9aeebe7413f0e6b0b37ce7e85b15_s.jpg" alt="cover" src="https://img2.justing.net.cn/b5eb9aeebe7413f0e6b0b37ce7e85b15_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/679/audios" class="text name"> 中国历代政治得失 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/17448">钱穆</a> 
+           </div> 
+          </div> </li> 
+         <li data-href="/books/369/audios"> 
+          <div class="rank">
+            10 
+          </div> 
+          <div class="cover-wrap"> 
+           <img class="cover with-default" data-src="https://img2.justing.net.cn/66013bee530c6a862d12435f44accade_s.jpg" alt="cover" src="https://img2.justing.net.cn/66013bee530c6a862d12435f44accade_s.jpg" style="display: inline;" /> 
+          </div> 
+          <div class="info"> 
+           <a href="/books/369/audios" class="text name"> 欧洲文明十五讲 </a> 
+           <div class="text authors-info"> 
+            <a href="/authors/14645">陈乐民</a> 
+           </div> 
+          </div> </li> 
+        </ul> 
+        <div class="dashboard-link-more"> 
+         <a class="link-more" href="/home/ranklist/books/bestseller"> 更多 <img src="https://static.justing.net.cn/static/-/web/img/misc/morearrow.dfa7bc35.png" alt="" /> </a> 
+        </div> 
+       </div> 
+      </div>
+      <!--/.tabs--> 
+     </div> 
+    </div>
+    <!--/.dashboard--> 
+   </div>
+   <!--/.container--> 
+  </div>
+
+	<script type="text/javascript" src="../dist/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

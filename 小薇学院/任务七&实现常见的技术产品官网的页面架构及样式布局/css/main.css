@@ -1,0 +1,99 @@
+
+/**************
+*****公共区域****
+**************/
+*{font-family: "Microsoft Yahei";
+  font-size:1.2vm;
+  color: #b5b0b0;
+  }
+
+li{
+	list-style: none;
+	display: inline-block;
+	margin:0;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.footer{
+	position: relative;
+	background-color: #32353e;
+	text-align: center;padding: 100px;
+
+
+}
+
+.footer input{
+	color:black;
+	padding: 10px 180px 10px 10px ;
+
+}
+
+
+
+
+.footer .footer-email{
+	display: inline-block;
+	background-color: #686166;
+	color: white;
+	height: 45px;
+	width: 75px;
+	line-height: 45px;
+	margin-left: -5px;
+
+}
+
+.footer ul{
+	padding-left: 0px;
+	
+
+}
+
+.footer ul li {
+	margin: 10px;
+	padding:10px;
+
+
+}
+
+.footer-nav-small{
+	position:absolute;
+	background-color: #2f3038;
+	width: 100%;
+	left: 0;
+	height: 50px;
+	line-height: 50px
+
+}
+
+.footer-nav-small span{
+	position: absolute;
+	left: 50px;
+
+}	
+
+.footer h3,
+.footer p,
+.footer span,
+.footer a {
+    color: #fff;
+}
+
+.footer-nav-small a {
+	margin-left:80%; 
+}

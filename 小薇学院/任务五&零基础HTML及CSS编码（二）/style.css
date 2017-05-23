@@ -1,0 +1,251 @@
+/**
+ * @author: AlexZ33
+ * @github: https://github.com/AlexZ33/ife-course
+ */
+@charset "utf-8";
+/* CSS Document */
+.a,.c
+{
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
+
+-moz-column-gap:40px; /* Firefox */
+-webkit-column-gap:40px; /* Safari and Chrome */
+column-gap:40px;
+}
+
+
+.b a{
+
+display: block;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+margin:20px 0;
+
+}
+
+.pic-list{
+display: flex;
+
+
+}
+.pic-item{
+	flex:1;
+}
+
+
+.text-strong{
+    font-weight: bold;
+
+    margin-left: 60px;
+}
+
+table{
+	display: inline-table;
+	width: 100%;
+	border-collapse: collapse;
+	border:1px solid #ddd;
+	padding: 3px;
+	line-height: 25px;
+	// text-align: center;
+}
+
+thead{
+	display: table-header-group;
+	border-color: inherit;
+	vertical-align: middle;
+}
+
+table th{
+	border:1px solid #ddd;
+	background-color:#2d3e4d;
+	color: #fff;
+
+}
+table tr{
+	background-color: #fff;
+	border-top:1px solid #ccc;
+
+
+}
+
+table tr.total{
+	background-color: #d4d4d4;
+	font-weight: bold;
+}
+
+
+
+.sidebar-title{
+	font-size: 18px;
+	border-left:3px solid #ddd;
+	padding-left:10px;
+	line-height: 40px;
+}
+
+
+
+
+.col-4{
+    float: left;
+    width:40%;
+}
+.col-6{
+    float: left;
+    width:60%;
+}
+.col-12{
+    width:100%;
+}
+.pull-right{
+    text-align: right;
+}
+.pull-left{
+    text-align: left;
+}
+.form-control{
+    display: inline-block;
+}
+.row{
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+.row:before{
+    display: table;
+    content: " ";
+}
+.row:after{
+    display: table;
+    content: " ";
+     clear:both;
+}
+.form-info{
+    color:#999;
+}
+
+
+
+
+
+
+
+.btn{
+	padding: 8px 15px;
+	background-color:#00a0e9;
+	color: #fff;
+	border-radius: 10px;
+	border:none;
+	width: 30%;
+	display: block;
+	margin:10px auto;
+
+}
+
+
+
+footer{
+	background: #333;
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+
+}
+
+footer ul{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+
+}
+footer ul li{
+	display: none;
+	padiding:100px; 
+}
+
+footer p{
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+
+footer a{
+	color: #E4CACA;
+}
+*{margin:0;
+ padding:0;
+ 
+}
+body{
+	background: #eee;
+}
+h3,span{
+    color:#5e5e5e;
+}
+section{
+	margin:30px 30px;
+	padding: 20px;
+	background-color: #fff;
+
+	box-shadow:5px 5px 10px #ccc; 
+}
+
+header{
+	background: #333;
+	height: 60px;
+	width: 100%;
+
+}
+ul{
+	margin:0;
+}
+
+nav ul{
+	list-style:none;
+	margin:0;
+	float: right;
+
+
+}
+
+nav ul li,nav .logo{
+	display: inline-block;
+	line-height:40px;
+
+	margin-right: 20px;
+}
+
+
+nav ul li a{
+	line-height: 50px;
+	text-decoration:none;
+	display: inline-block;
+	height: inherit;
+	color: white;
+
+}
+
+nav .logo{
+	float: left;
+	padding: 10px;
+	color: #fff;
+	font-size: 24px;
+	font-family: "Mcrosoft Yahei";
+
+}
+
+
+
+
+
+

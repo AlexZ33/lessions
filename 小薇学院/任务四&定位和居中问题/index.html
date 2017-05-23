@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位和居中问题 | 镜心书社</title>
+	<style>
+
+	html,body{
+            margin: 0;
+            padding:0;
+        }
+
+		#container{
+		
+			background-color: #ccc;
+			width: 400px;
+			height: 200px;
+			
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -100px 0 0 -200px;
+			/* 也可以用css3方法 */
+			/*  -moz-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%); */
+			overflow: hidden;
+
+
+		}
+		
+		.left-circle ,.right-circle{
+			background-color: #fc0;
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			-webkit-border-radius:50px;
+            -moz-border-radius:50px;
+            position: relative;
+
+
+
+		}
+		.left-circle {
+			left: -50px;
+			top: -50px;
+			
+		}
+		.right-circle{
+			bottom: -50px;
+			left: 350px;
+		
+
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		
+		<div class="left-circle"></div>
+		<div class="right-circle"></div>
+	</div>
+</body>
+</html>

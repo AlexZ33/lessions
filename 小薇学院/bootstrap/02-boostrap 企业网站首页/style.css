@@ -1,0 +1,344 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+body,html{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	padding-top: 70px;
+	line-height: 1.7;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    word-wrap: break-word;
+    background: #f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.navbar-brand img{width: 40px;height: 40px;}
+
+.main .main-section{
+	border-bottom: 1px solid #e2e2e2;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.main-ads-section {
+    margin-bottom: 0!important;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.section, .section h4 {
+    margin-bottom: 12px;
+}
+
+.no-border, .without-border {
+    border: 0!important;
+}
+
+.home-recommend .div {
+    display: block;
+}
+.carousel{
+	width: 742px;
+}
+
+
+.carousel-control    {
+	position: absolute; 
+    top: 182px;
+    background: transparent;
+}
+..cf:after, .cf:before {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+.fixed-layout .col-main {
+    width: 780px;
+    padding-bottom: 50px;
+}
+
+.fixed-layout .col {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 38px;
+}
+
+.slide {
+    position: relative;
+}
+
+
+.main .main-section h4 {
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 0;
+}
+.section, .section h4 {
+    margin-bottom: 12px;
+}
+.section h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.main .main-section h4 .title {
+    margin-right: 16px;
+    font-size: 17px;
+    color: #434343;
+}
+
+.main .main-section h4 .link-more {
+    color: #2b587a;
+    font-size: 14px;
+}
+
+.btn, .btn-link, a {
+    text-decoration: none;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    
+}
+
+
+.main .main-section h4 .link-more .link-text {
+    margin-right: 4px;
+}
+
+.main-section-slide .slide-controls .next, .main-section-slide .slide-controls .prev {
+
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    outline: 0;
+}
+.main-section-slide .slide-controls .prev {
+    margin-right: 3px;
+}
+.main-section-slide .slide-controls {
+    float: right;
+    font-size: 0;
+}
+.slide .carousel {
+    overflow: hidden;
+}
+.slide .slide-list {
+    position: relative;
+    font-size: 0;
+}
+.slide .slide-item {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1px;
+}
+
+ol.list-col5, ul.list-col5 {
+    font-size: 0;
+}
+.list-col2, .list-col26, .list-col3, .list-col4, .list-col5, .list-col7 {
+    margin-right: -30px;
+    overflow: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+
+.main-newest-books-section li {
+    padding-bottom: 0;
+}
+
+.main-books-list-col5 li {
+    position: relative;
+}
+.list-col5 li {
+    width: 20%;
+    font-size: 14px;
+}
+
+.btn, .form .radio, .label, .list-col2 li, .list-col26 li, .list-col3 li, .list-col4 li, .list-col5 li, .list-col7 li {
+    display: inline-block;
+}
+.list li {
+    margin-bottom: 4px;
+}
+.list-col2 li, .list-col26 li, .list-col3 li, .list-col4 li, .list-col5 li, .list-col7 li {
+    vertical-align: top;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.main-books-list-col5 li .desc-info-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.list a, .list li {
+    display: block;
+}
+
+
+
+.main-books-list-col5 li .desc-info-wrap .desc-info {
+    color: #f0f0f0;
+    height: 172px;
+    margin-right: 30px;
+    padding: 6px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    text-indent: 18px;
+    background--webkit-margin-before: rgba(0,0,0,.7);
+    background-image: url(/static/web/img/misc/bg.png);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.main-books-list-col5 li .desc-info-wrap .price-info {
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+.fixed-layout .col:last-child, .fixed-layout .last-col {
+    padding-right: 0;
+}
+.fixed-layout .col-dashboard {
+    width: 220px;
+}
+.fixed-layout .col {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 38px;
+}
+.dashboard .dashboard-section {
+    padding-bottom: 58px;
+    margin-bottom: 58px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e2e2e2;
+}
+.dashboard .dashboard-section h4 {
+    margin-top: 30px;
+    margin-bottom: 32px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.section h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.common-list li {
+    margin-bottom: 1px;
+}
+.common-list li a {
+    box-sizing: border-box;
+    color: #5c5c5c;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.common-list li a, .common-list li.split {
+    padding: 10px 17px;
+}
+.dashboard-tabs .tabs-navs {
+    margin-left: 19px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.dashboard-tabs .tabs-navs .tabs-nav-active {
+    color: #333;
+}
+.dashboard-tabs .tabs-navs .split {
+    margin: 0 12px;
+    color: #313131;
+}
+.dashboard-tabs .tabs-navs .tabs-nav {
+    color: #888;
+}
+.dashboard-tabs .tabs-content-default {
+    display: block;
+}
+.dashboard-books-rank-list li {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 0 0 6px;
+}
+.dashboard-books-rank-list li .rank {
+    width: 20px;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    margin-right: 8px;
+    font-weight: 700;
+}
+.dashboard-books-rank-list li .cover-wrap img {
+    max-width: 52px;
+    max-height: 42px;
+}
+.dashboard-books-rank-list li .info {
+    overflow: hidden;
+}
+.dashboard-books-rank-list li .info .authors-info {
+    font-size: 13px;
+    color: #999;
+}

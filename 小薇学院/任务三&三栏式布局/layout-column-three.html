@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout-column</title>
+	<style>
+		
+		div{border: 1px solid #999;}
+		img{width: 80px;height: 80px;background: transparent;}
+
+		span{position: absolute;
+
+			left: 120px;top: 20px;
+			font-weight: bold;	
+		}
+		.right .logo{margin:20px;width:80px;}
+		.container{background-color: #eee;padding: 20px;position: relative;height:450px;}
+		
+		.left{position: absolute;top: 20px;left:20px;width:200px; height: 120px;background: #fff;}
+		.right{position: absolute;top: 20px;right:20px;width:120px; height: 440px;background: #fff;}
+
+		.main{margin-left:220px;background: #fff;height: 800px; margin-right:140px;height: 400px; }
+		.inner{margin: 20px;width: 80px;}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+		<span>镜心书社</span>
+			<div class="inner">
+				<img src="../../images/1.jpeg" alt="" class="teamlogo">
+			</div>
+			
+		</div>
+		<div class="main"></div>
+		<div class="right">
+			<div class="logo"><img src="../../images/1.jpeg" alt=""></div>
+			<div class="logo"><img src="../../images/1.jpeg" alt=""></div>
+			<div class="logo"><img src="../../images/1.jpeg" alt=""></div>
+			<div class="logo"><img src="../../images/1.jpeg" alt=""></div>
+		</div>
+	</div>
+	
+</body>
+</html>

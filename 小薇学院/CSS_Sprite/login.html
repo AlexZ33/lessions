@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登陆框雪碧图 | 镜心书社</title>
+</head>
+<style>
+*{margin: 0;
+padding: 0;
+}
+
+.container{
+	width: 220px;
+	height: 400px;
+	background: #ebfafa;
+
+}
+.login-form{
+	padding: 15px;
+}
+
+.login-input{
+	display: block;
+	height: 32px;
+	width: 188px;
+	margin-top: 15px;
+	border: 1px solid #adb6c9;
+	border-radius: 3px;
+	text-indent: 30px;
+	font-size: 15px;
+}
+
+p{
+	height: 13px;
+	margin-top: 15px;
+}
+
+p label{
+	font-size: 13px;
+	vertical-align: top;
+}
+
+p a{
+	font-size: 13px;
+	text-decoration: none;
+	float: right;
+}
+
+.btn{
+	width: 190px;
+	height: 38px;
+	margin-top: 15px;
+	border: 0;
+	background: url(login.jpg) no-repeat;
+	text-indent: -9999em;
+	cursor: pointer;
+}
+
+.register-btn{
+	background-position:0 -38px;
+
+}
+hr{margin-top: 20px;}
+
+	
+</style>
+<body>
+	<div class="container">
+		<form class="login-form">
+			<input class="login-input" type="text" placeholder="邮箱/手机号/用户名" />
+			<input class="login-input" type="password" placeholder="请输入密码" />
+
+			<p>
+				<input type="checkbox" id="autologin">
+				<label for="autologin">下次自动登录</label>
+				<a href="javascipt:;" title="">忘记密码？</a>
+			</p>
+			<input type="submit" class="btn login-btn" value="登录" />
+			<input type="button" class="btn register-btn" value="注册" />
+		</form>
+	</div>
+
+</body>
+</html>

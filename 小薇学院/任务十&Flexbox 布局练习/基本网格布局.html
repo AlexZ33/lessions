@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本网格布局 | 镜心书社</title>
+	<style>
+	body,html{margin:0;padding: 0;}
+
+		.Grid{
+			/* 基本样式 */
+			width: 900px;
+			height: 500px;
+			border: 1px solid #555;
+			font: 25px Arial;
+
+			/* 建立弹性框 */
+			display: flex;
+			flex-direction: row;
+
+			display: -webkit-flex;
+      		-webkit-flex-direction: row;
+			
+
+		}
+		.Grid-cell{
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+
+			width: 300px; 
+
+/* 让过渡表现良好。（从/到"width:auto"的过渡
+至少在 Gecko 和 Webkit 上是有 bug 的。
+更多信息参见 http://bugzil.la/731886 ） */
+
+			-webkit-transition: width 0.7s ease-out;
+			transition: width 0.7s ease-out;
+		}
+	/* colors */
+		.Grid-cell:nth-child(1){
+			background: #009246;
+		}
+		.Grid-cell:nth-child(2){
+		background: #f1f2f1;
+		}	
+		.Grid-cell:nth-child(3){
+			background: #ce2b37;
+		}
+
+		.Grid-cell:hover{
+			width:500px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="Grid">
+		<div class="Grid-cell">镜心</div>
+		<div class="Grid-cell">的</div>
+		<div class="Grid-cell">小树屋</div>
+	</div>
+</body>
+</html>
