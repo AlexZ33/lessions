@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cors | 跨域</title>
+</head>
+<body>
+	<div id="box">
+		
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+
+       $(function(){
+       	$.ajax({
+       		type:"GET",
+       		url: "http://127.0.0.1:3009/api/test",
+       		dataType:"json",
+          crossDomain:true,
+          success:showMsg
+       	})
+       }) 
+
+       function showMsg (data) {
+       	console.log(data)
+       	box.innerText = data.name + data.age
+       }
+	</script>
+</body>
+</html>

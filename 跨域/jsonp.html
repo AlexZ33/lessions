@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JSONP 跨域</title>
+</head>
+<body>
+	<div id="box">
+		
+	</div>
+
+	<script type="text/javascript">
+		var box = document.querySelector('#box')
+		var script = document.createElement('script');
+		script.src =  "http://127.0.0.1:3009/api/test?callback=showMsg"
+		script.type = "text/javascript"
+		document.head.appendChild(script)
+		function showMsg(msg) {
+			console.log(msg);
+			box.innerText = msg.name
+		}
+	</script>
+</body>
+</html>
