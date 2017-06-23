@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>左边宽度固定  右边div宽度能够自适应剩余容器宽度</title>
+	<style type="text/css" media="screen">
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background-color: #fff;
+		}
+		.cont{
+			width: 80%;
+			height: 40%;
+			margin: 50px auto 0;
+			background-color: #f4f4f4;
+		}
+
+		.left-item{
+			width: 10em;
+			height: 100%;
+			background-color: #0099ff;
+		}
+		.right-item{
+			height: 100%;
+			background-color: #ff6666;
+		}
+
+
+		/* 不同方法 */
+
+
+		/* 第一种 all inline-block + calc() */
+
+	/* 	.cont{font-size: 0}
+		.left-item{
+			font-size: 16px;
+			display: inline-block;
+		}
+		.right-item{
+			font-size: 16px;
+			display: inline-block;
+			width: calc(100%-10em);
+		}
+ */
+		/* 第二种 all float + calc() */
+
+	/* 	.cont{
+			zoom: 1;
+		}
+		.cont::after{
+			content: ' ';
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			clear: both;
+			overflow: hidden;
+			visibility: hidden;
+		}
+
+		.left-item{
+			float: left;
+		}
+		.right-item{
+			float: right;
+			width: calc(100%-10em);
+		} */
+
+		/* 第三种 left float */
+/* 
+		.cont {
+		  zoom: 1;
+		}
+		.cont::after {
+		  content: ' ';
+		  display: block;
+		  font-size: 0;
+		  line-height: 0;
+		  clear: both;
+		  overflow: hidden;
+		  visibility: hidden;
+		}
+		.left-item {
+		  float: left;
+		}
+		.right-item {
+		  width: 100%;
+		  padding-left: 10em;
+		  box-sizing: border-box;
+		} */
+
+	  /* 第四种 left absolute */
+
+	/* 	.cont {
+		  position: relative;
+		}
+		.left-item {
+		  position: absolute;
+		}
+		.right-item {
+		  width: 100%;
+		  padding-left: 10em;
+		  box-sizing: border-box;
+		} */
+
+     /* 第五种 all absolute */
+
+   /*    .cont {
+			  position: relative;
+			}
+			.left-item {
+			  position: absolute;
+			}
+			.right-item {
+			  position: absolute;
+			  left: 10em;
+			  right: 0;
+			} */
+
+
+			/* 第六种 right flex */
+
+			/* .cont{
+				 display: -webkit-flex;
+				 display: -ms-flex;
+				 -webkit-display: flex;
+				 -ms-display: flex;
+				 display: flex;
+			}
+
+			.left-item {}
+			.right-item {
+			  flex: 1;
+			} */
+
+			/* 第七种 table */
+		/* 	.cont {
+			  display: table;
+			}
+			.left-item {
+			  display: table-cell;
+			}
+			.right-item {
+			  display: table-cell;
+      } */
+
+
+      /* 第八种 grid */
+
+      .cont {
+			  display: grid;
+			  grid-template-columns: 10em auto;
+			}
+			.left-item {
+			}
+			.right-item {
+			}
+	</style>
+</head>
+<body>
+	<div class="cont">
+  <div class="left-item">
+
+  </div>
+  <div class="right-item">
+
+  </div>
+</div>
+</body>
+</html>
