@@ -175,7 +175,7 @@ all 可以是 screen ,print.这是媒体类型可以通过媒体类型对不同�
 ![](http://on891bjlf.bkt.clouddn.com/react/77.png)
 webkit核心用量大
 
-##响应式设计的断点
+## 响应式设计的断点
 
 ```
 /*-----------iphone 4 and 4s -------------*/
@@ -213,7 +213,7 @@ webkit核心用量大
 
 # 项目文件说明
 
-# http://editorconfig.org/
+## http://editorconfig.org/
 
 ```
 
@@ -234,7 +234,7 @@ trim_trailing_whitespace = false
 
 ```
 
-# .gitignore
+## .gitignore
 
 ```
 
@@ -246,9 +246,9 @@ node_modules
 dist
 ```
 
-# README.md
+## README.md
 项目简介、 使用方式、相关链接
 
-# CHANGLOG.md
+## CHANGLOG.md
 项目每个版本更新
 说明版本号、更新内容、修复了哪些问题
