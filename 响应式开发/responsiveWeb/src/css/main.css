@@ -349,7 +349,7 @@ header .main ul li a.active{
 
 /*滚动广告*/
 .ad{
-    display: none;
+   /* display: none;*/
 }
 
 /*平台公告*/
@@ -794,7 +794,7 @@ footer ul li .icon{
     display: inline-block;
     text-indent: -999rem;
     margin-right: 1.5rem;
-    background: url(https://i.alipayobjects.com/e/201307/jebmKcbrh.png) no-repeat;
+    background: url(../img/cert1.png) no-repeat;
     background-size: 466px 447px;
     overflow: hidden;
 
@@ -837,13 +837,43 @@ footer ul li .icon-gs {
     width: 30px;
     height: 30px;
     margin-right: 0;
-    background: url(https://os.alipayobjects.com/rmsportal/lybcjqloSPjMAFg.png) no-repeat;
+    background: url(../img/cert2.png) no-repeat;
     background-size: 30px;
 }
 
 footer p {
     text-align: center;
     color: #999;
+}
+
+
+/* 打印样式*/
+
+@media print{
+    *,
+    *:before,
+    *:after{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow:none !important;
+    }
+    a,
+    a:visited{
+        text-decoration: underline;
+    }
+    a[href]:after{
+        content: "("attr(href) ")";
+    }
+    a[title]:after{
+        content: "("attr(title) ")";
+    }
+/*使用#和 javascript 的超链接不打印*/
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after{
+        content: "";
+    }
+
 }
 
 
