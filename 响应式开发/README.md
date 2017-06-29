@@ -252,3 +252,10 @@ dist
 ## CHANGLOG.md
 项目每个版本更新
 说明版本号、更新内容、修复了哪些问题
+
+
+[干货 | 前端常用的通信技术](https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697266201&idx=2&sn=1b2ca738a21c6d899e82fa6fe769446b&chksm=8376fb2db401723b8a88295bfb74f98bddc2eb52dabffe221ec2f06ed49885f3e606231796d5&mpshare=1&scene=1&srcid=0626CdlsrLLs1zTJuWbxwj3R&pass_ticket=bgga6XE%2Bnb2dC1QLDF7L3KECmj6yZ08x6Xj8qJ7arA0%3D#rd)
+
+
+参照范例:
+http://responsiveweb.t.imooc.io/

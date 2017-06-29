@@ -1,3 +1,35 @@
+# http-server
+[http-server](https://github.com/indexzero/http-server)
+命令行的server  基于nodejs
+
+```
+npm install http-server -g
+```
+
+本项目网站文件是在src文件夹,所以响应式网站一般用这个作为基础css
+
+
+```
+http-server src
+
+```
+![](http://on891bjlf.bkt.clouddn.com/image/916.png)
+
+```
+/*可以访问远程服务器地址*/
+  http://169.254.49.17:8081
+  http://169.254.254.104:8081
+  http://192.168.1.43:8081
+/*本地服务器地址*/
+
+http://127.0.0.1:8081
+
+
+```
+
+
+
+# 响应式相关css知识点
 1、一般用class定义样式  id一般用于js快速的区分和获取元素
 class一般都用中横线分隔，id一般用驼峰名称法
 

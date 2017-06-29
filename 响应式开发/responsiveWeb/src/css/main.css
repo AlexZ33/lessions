@@ -526,14 +526,14 @@ header .main ul li a.active{
 }
 
 .product .product-content .item + .item{
-    border-top: :1px solid #eee;
+    border-top: 1px solid #eee;
 
 }
 
 .product .product-content .item h3{
     float: left;
     width: 30%;
-    margin 1.5rem 0 ;
+    margin:1.5rem 0 ;
     font-size: 1.4rem;
     font-weight: normal;
     text-align: center;

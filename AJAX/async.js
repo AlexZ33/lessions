@@ -10,7 +10,7 @@ window.onload = function() {
 	http.send();
 
 	//jquery method
-	$.get("data/jx.json", function(data) {
+$.get("data/jx.json", function(data) {
 		console.log(data);
 	});
 	console.log('test');

@@ -1,0 +1,1 @@
+[让PC页面自动伸缩，以适应所有设备](http://blog.freeedit.cn/2017/05/09/HTML-0001-make-the-PC-page-Flexible/)
