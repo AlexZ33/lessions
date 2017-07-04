@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu </title>
+	<style>
+		*{
+			font-family: verdanna;
+			margin: 0;
+
+		}
+
+		body{
+			background: #eee;
+
+		}
+
+		.wrapper{
+			width: 100%;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+
+		/* menu base styles */
+    
+     nav{
+     	background: #333;
+
+
+     }
+
+     nav ul{
+     	list-style-type: none;
+     	padding: 0;
+
+     }
+
+     nav a{
+     	text-decoration: none;
+     	text-align: center;
+     	color: #fff;
+     	display: block;
+     	padding: 10px;
+    
+
+     }
+
+     nav ul.menu a:hover{
+     	background: #555;
+     }
+
+    
+     /* social menu base style*/
+     a.icon-wechat {
+    background-image: url(img/social-wechat.webp);
+    background: rgba(0,0,0,.0001) url(img/social-wechat.svg) 50%/100% no-repeat;
+    background-size: 50%;
+    }
+
+
+    a.icon-weibo {
+    background-image: url(img/social-weibo.webp);
+    background: rgba(0,0,0,.0001) url(img/social-weibo.svg) 50%/100% no-repeat;
+    background-size: 50%;
+    }
+   .social a {
+   	text-indent: -10000px;
+   }
+
+   .social{
+   	 max-width: 100px;
+   	 margin: 0 auto;
+   }
+
+    /* grid vs flex base styles */
+
+    #blocks{
+    	margin: 20px;
+
+    }
+
+    article{
+    	background: #fff;
+    	margin-bottom: 20px; 
+    	padding: 10px;
+    	box-sizing: border-box;
+    }
+    article h2{
+    	text-align: center;
+    	font-size: 20px;
+    	margin: 10px 0;
+    }
+
+		/* flex styles */
+
+		nav ul.social{
+			flex: 1 1 0;
+			display: flex;
+		}
+		nav ul.social li {
+			flex: 1 1 0;
+		}  
+
+
+
+
+		@media screen and (min-width:768px){
+			nav ul{
+			  display: flex;
+			  justify-content:flex-start; // center flex-end、 flex-start、space  around、 space between
+			}
+			nav li{
+				flex: 1 1 0;
+			}
+
+			nav{
+				display: flex;
+				justify-content: space-between;
+			}
+
+			ul.social{
+				margin: 0;
+			}
+
+			#blocks{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+      .buttom a{
+      	display: inline-block;
+      	font-size: 18px;
+      	background: #708090;
+      	border-radius: 5px;
+      	text-decoration: none;
+      	color: #fff;
+      }
+			article{
+				flex: 0 1 32%;
+				transition: flex-basis 0.2s linear;
+
+			}
+			article.stack{
+				flex:0 1 100%;
+			}
+		}
+	</style>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<nav>
+			<ul class="menu">
+				<li><a href="" title="">首页</a></li>
+				<li><a href="" title="">关于</a></li>
+				<li><a href="" title="">仓库</a></li>
+				<li><a href="" title="">联系</a></li>
+			</ul>
+
+			<ul class="social">
+				<li><a href="" class="icon icon-wechat">wechat</a></li>
+				<li><a href="" class="icon icon-weibo">weibo</a></li>
+			</ul>
+		</nav>
+
+    <div style="margin:20px" class="buttom">
+    		<span>Layout</span>
+    		<a href="#" class="stack">Stack</a>
+    		<a href="#" class="grid">Grid</a>
+    </div>
+		<section id="blocks">
+		  <article>
+		  	<h2>啊啊啊啊啊</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>
+		  <article>
+		  	<h2>噢噢噢噢</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>
+		  <article>
+		  	<h2>啊啊啊啊啊</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>
+
+		  <article>
+		  	<h2>谔谔谔谔</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>
+		  <article>
+		  	<h2>哎哎哎哎吖</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>
+		  <article>
+		  	<h2>么么额么么么</h2>
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </article>			
+		</section>
+
+		<script>
+			$('a.stack').on('click', function(){
+				$('article').addClass('stack')
+			})
+			$('a.grid').on('click', function(){
+				$('article').removeClass('stack')
+			})
+		</script>
+	</div>
+</body>
+</html>

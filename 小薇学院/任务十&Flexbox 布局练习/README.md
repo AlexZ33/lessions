@@ -32,3 +32,15 @@
 ![](http://osgp88fat.bkt.clouddn.com/flex/4.png)
 
 [在线查看](http://osh38kbcg.bkt.clouddn.com/flex/Creating-a-Menu-with-Flexbox.html)
+
+# flexflow 
+
+![](http://osgp88fat.bkt.clouddn.com/flex/1.png)
+
+# Grid vs Stacked Layout 
+![](http://on891bjlf.bkt.clouddn.com/gif/gridvsstack.gif)
+
+[在线查看](http://osh38kbcg.bkt.clouddn.com/flex/Grid-vs-Stacked-Layout%20.html#)
+
+
+
