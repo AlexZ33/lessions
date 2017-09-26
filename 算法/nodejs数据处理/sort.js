@@ -1,8 +1,10 @@
+//https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 const fs = require('fs');
 
 const json = fs.readFileSync('./1072.json', 'utf-8');
 const data = JSON.parse(json);
 data.sort((a, b) => {
+  console.log(b);
   if (a.t === b.t) {
     if (a.lat === b.lat) {
       if (a.lng === b.lng) {
