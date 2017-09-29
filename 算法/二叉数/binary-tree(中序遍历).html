@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Binary Tree</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+
+		function BinaryTree() {
+			//二叉查找树由节点组成，所以我们先定义Node
+
+			//Node
+			var Node = function(data,left,right) {
+				this.data = data;
+				this.left = left;
+				this.right = right;
+               // this.show = show;
+			};
+                        
+            var root = null;//设置根节点
+              
+            //insert()方法，用来向树中加入新节点
+            this.insert = function(data) {
+            	var newNode = new Node(data,null,null);
+            	if(root ===null){
+            		root = newNode;
+            	}
+            	else {
+                    insertNode(root,newNode);    
+            	}
+            };
+
+            this.inOrderTraverse = function(callback) {
+                inOrderTraverseNode(root,callback);
+            }
+
+            var insertNode = function(node,newNode) {
+                     if(newNode.data < node.data){
+                        if(node.left === null){
+                          node.left = newNode;
+                        }else{
+                          insertNode(node.left,newNode);
+                        }
+                     }else{
+                       if(node.right === null){
+                         node.right = newNode;
+                       }else{
+                         insertNode(node.right,newNode);
+                       }
+                     }
+            	
+            };
+
+            var inOrderTraverseNode = function(node,callback) {
+                if (node!==null) {
+                	inOrderTraverseNode(node.left,callback);
+                	callback(node.data);
+                	inOrderTraverseNode(node.right,callback);
+                }
+            }			
+
+		}
+
+
+		var nodes = [8,3,10,1,6,14,4,7,13];
+		var binaryTree = new BinaryTree();
+		nodes.forEach(function(data) {
+			binaryTree.insert(data);
+		});
+     
+     //中序遍历
+      var callback = function(data) {
+      	console.log(data);
+      }
+      binaryTree.inOrderTraverse(callback);
+     //先序遍历
+
+     //后序遍历
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>北京电力系统监控情况</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body  scroll="no" style="overflow-x:hidden;overflow-y:hidden">
+      
+    <div class="amap-info-content amap-info-outer" >
+      <div>系统名称：&nbsp;&nbsp;<span id="name"></span></div>
+      <div>系统IP：&nbsp;&nbsp;<span id="ip"></span></div>
+      <div>系统负载：&nbsp;&nbsp;<span id="load"></span></div>
+      <div>响应式时间：&nbsp;&nbsp;<span id="response"></span></div>
+      <div>是否受到攻击：&nbsp;&nbsp;<span id="attack"></span></div>
+      <div>运行方式：&nbsp;&nbsp;<span id="run"></span></div>
+    </div>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script>
+      $(function () {
+        var url = 'http://101.68.86.227:7001/dataset/json?oid=1045';
+        var params = (new URL(document.location)).searchParams;
+        var sysid = params.get('sysid') || 1;
+        $.ajax({
+          url: url,
+          dataType: 'jsonp'
+        }).done(function (data) {
+          var record = [].concat(data).find(function (d) {
+            return String(d.sysid) === String(sysid);
+          });
+          $('#name').html(String(record.name));
+          $('#ip').html(String(record.ip));
+          $('#load').html(String(record.load));
+          $('#response').html(String(record.response));
+          $('#attack').html(String(record.attack));
+          $('#run').html(String(record.run));
+        });
+      });
+    </script>
+  </body>
+</html>

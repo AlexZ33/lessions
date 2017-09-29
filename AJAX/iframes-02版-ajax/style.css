@@ -1,0 +1,72 @@
+
+ body, html{
+    height: 100%;
+    margin: 0px;
+    font: 12px Arial;
+}
+}
+div{display: block}
+.amap-info-content{
+    display: block;
+    border: 0;
+        background: transparent;
+    background-image: url('img/info-bg.png');
+    background-size: cover;
+    border-radius: 5px;
+    padding:40px;
+    font-size: 35px;
+    width:86%;
+    height:880px;
+    color: #ffffff;
+}
+.amap-info-outer{
+    box-shadow: 0 3px 14px rgba(0,0,100,.6);
+    text-align: left;
+    border: 1px solid silver;
+}
+.amap-info-sharp{
+ top: -2px;
+}
+.amap-info-content p{
+    margin: 0;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    animation:font 2s infinite ;
+    -webkit-animation:font 2s ;
+    animation-fill-mode:forwards;
+    position: relative;
+}
+@keyframes font{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: #fff;
+    }
+
+}
+.amap-info-content p:nth-child(1) {
+    color: #38d4f5;
+    font-weight: bold;
+    font-size: 20px;;
+}
+.amap-info-content a{
+    color: #38d4f5;
+    font-size: 14px;
+    animation:font 2s infinite ;
+    -webkit-animation:a 2s ;
+    animation-fill-mode:forwards;
+}
+@keyframes a{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color:  #38d4f5;
+    }
+
+}
+.amap-info-content a:focus{
+    color: #38d4f5;
+}

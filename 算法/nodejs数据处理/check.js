@@ -7,11 +7,12 @@ const checkcity = ["北京市","上海市","广州市","深圳市","成都市","
 
 const output= data.map((val,i) => {
 
-  return checkcity.includes(val.name) ? {
+  return checkcity.includes(val.name.slice(0,3)) ? {
     name: val.name,
     lng: val.lng,
     lat: val.lat,
-    adcode: val.adcode
+    adcode: val.adcode,
+    value: 15
   }:null;
 }).filter(v => v);;
 
