@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 20%;
+}
+.test{
+	margin-top: 900px;
+}
+
+
+</style>
+</head>
+<body>
+<div>
+<img src="load" title="1" data-src="img/work_list_07.jpg">
+<img src="load" title="1" data-src="img/work_list_03.jpg">
+<img src="load" title="1" data-src="img/work_list_05.jpg">
+<img src="load" title="1" data-src="img/work_list_12.jpg">
+<div>
+<div class="test">
+<img src="load" title="1" data-src="img/work_list_07.jpg">
+<img src="load" title="1" data-src="img/work_list_03.jpg">
+<img src="load" title="1" data-src="img/work_list_05.jpg">
+<img src="load" title="1" data-src="img/work_list_12.jpg">
+<div>
+<script type="text/javascript">
+
+   //函数节流
+   function throttle(fn,delay,atlest){
+   	 var sTime=new Date();
+   	 var timeout=null;
+   	 return function(){
+   	 	var curTime=new Date();
+   	 	if(curTime-sTime>atlest){
+   	 		fn();
+   	 		sTime=curTime;
+   	 	}else{
+   	 		setTimeout(fn,delay);
+   	 	}
+   	 }
+
+   }
+   function lazyload(){
+       var imgs=document.getElementsByTagName("img");
+       var len=imgs.length;
+       var n=0;
+       console.log(len)
+       return function(){
+       	var seeHeight=document.documentElement.clientHeight;//可见的高度
+       	var st=document.documentElement.scrollTop||document.body.scrollTop;
+       for(var i=n;i<len;i++){
+         if(imgs[i].offsetTop<seeHeight+st){
+         	if(imgs[i].getAttribute("src")==="load"){
+         		imgs[i].src=imgs[i].getAttribute("data-src");
+         		n=n+1
+         	}
+
+         }
+
+       }
+          
+          }
+   }
+  var loadimg=lazyload();
+      loadimg()
+window.addEventListener("scroll",throttle(loadimg,500,1000),false)
+</script>
+
+</body>
+</html>
