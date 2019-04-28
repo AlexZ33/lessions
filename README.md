@@ -1,6 +1,6 @@
 # coder学习笔记
 
-##简介
+## 简介
 
 
 
@@ -12,7 +12,7 @@ MIT
 
 ---
 
-> [专栏：镜心的小树屋](https://segmentfault.com/blog/jx-treehouse)
+> [专栏：镜心的小树屋](https://segmentfault.com/blog/jx-treehouse);
 > [jxdxsw.com](http://jxdxsw.com) &nbsp;&middot;&nbsp;
 > GitHub [@AlexZ33](https://github.com/AlexZ33) &nbsp;&middot;&nbsp;
 > Weibo [@镜心书社](http://weibo.com/jxtreehouse)
