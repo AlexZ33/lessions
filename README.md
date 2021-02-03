@@ -7,6 +7,9 @@
 
 [segement专栏: 镜心的小树屋](https://segmentfault.com/blog/jx-treehouse): 主要一些编程知识总结
 
+## 微信公众号
+
+
 ## 读书笔记
 [《数据之巅》读后感与狂想!](https://zhuanlan.zhihu.com/p/23368515)
 
