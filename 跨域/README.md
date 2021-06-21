@@ -1,3 +1,7 @@
+#! https://zhuanlan.zhihu.com/p/373870169
+
+<b>前端基础 - 跨域</b>
+
 协议、域名、端口号任意一个不同就会发生跨域
 
 [ajax跨域请求](http://jxdxsw.com/2017/02/04/ajax%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/)

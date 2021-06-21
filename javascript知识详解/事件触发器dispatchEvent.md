@@ -1,3 +1,4 @@
+#! https://zhuanlan.zhihu.com/p/373872159
 # 事件触发器
 `addEventListener(type,fun,bool)`是监听一个事件，当触发事件时，执行函数，那么什么时候触发事件呢，当监听到dispatchEvent(type)时，触发
 

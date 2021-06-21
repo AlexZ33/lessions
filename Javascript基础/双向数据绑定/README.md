@@ -1,17 +1,18 @@
-## 双向数据绑定原理(三种实现方式)
+#! https://zhuanlan.zhihu.com/p/373873290
+#  双向数据绑定原理(三种实现方式)
 
-### 脏检查  
+## 脏检查  
 
 我们说Angularjs（这里特指AngularJS 1.x.x版本，不代表AngularJS 2.x.x版本）双向数据绑定的技术实现是脏检查，大致的原理就是，   Angularjs内部会维护一个序列，将所有需要监控的属性放在这个序列中，当发生某些特定事件时（注意，这里并不是定时的而是由某些特殊事件触发的），Angularjs会调用 $digest 方法，这个方法内部做的逻辑就是遍历所有的watcher，   对被监控的属性做对比，对比其在方法调用前后属性值有没有发生变化，如果发生变化，则调用对应的handler。  网上有许多剖析Angularjs双向数据绑定实现原理的文章，比如 这篇 ，再比如 这篇 ，等等。  这种方式的缺点很明显，遍历轮训watcher是非常消耗性能的，特别是当单页的监控数量达到一个数量级的时候。 
 
-### 观察机制  
+## 观察机制  
 
   Object.observe()带来的数据绑定变革 ，说的就是使用ECMAScript7中的 Object.observe 方法对对象 .
 （或者其属性）进行监控观察，一旦其发生变化时，将会执行相应的handler。是目前监控属性数据变更最完美的一种方法，语言（浏览器）原生支持，没有什么比这个更好了。唯一的遗憾就是目前支持广度还不行，有待全面推广。  
 
-### 封装属性访问器  
+## 封装属性访问器  
 
-国产mvvm框架vue.js实现数据双向绑定的原理就是属性访问器。  它使用了ECMAScript5.1（ECMA-262）中定义的标准属性 Object.defineProperty 方法。针对国内行情，
+mvvm框架vue.js实现数据双向绑定的原理就是属性访问器。  它使用了ECMAScript5.1（ECMA-262）中定义的标准属性 Object.defineProperty 方法。针对国内行情，
 
 部分还不支持 Object.defineProperty 低级浏览器采用VBScript作了完美兼容，不像其他的mvvm框架已经逐渐放弃对低端浏览器的支持
 
@@ -57,7 +58,7 @@
 
 ```
 
-
+注意vue3使用的proxy实现
 
 
 # 分析
@@ -81,7 +82,7 @@ object.defineProperty() 的第二个参数，是给第一个参数obj新定义�
 
 当我们对它重新赋值时候会自动 触发set方法
 
-![](http://osgp88fat.bkt.clouddn.com/javascript/2017-08-11%2021-24-55%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+
 
 同样我们获取obj.username时候 自动触发get方法
 
@@ -111,7 +112,6 @@ var obj = {};
 ` document.getElementById("uName").innerHTML = val;` 
 
 
-![](http://osgp88fat.bkt.clouddn.com/javascript/2017-08-11%2021-39-50%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
 
 
