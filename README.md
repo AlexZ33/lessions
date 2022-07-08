@@ -5,10 +5,19 @@
 
 [知乎专栏:和对象一起学编程](https://zhuanlan.zhihu.com/c_1069272612663902208): 主要讨论各种编程基础、面试试题等
 
+[知乎专栏: Python基础](https://www.zhihu.com/column/c_1422614016078794752): python基础课程和脚本
+
+[知乎专栏: golang编程指北](https://www.zhihu.com/column/c_1424037828330680320): go语言、中间件、消息队列、web、数据库、容器
+
+[知乎专栏: Java编程指南](https://www.zhihu.com/column/c_1432356302336614400): 基础、容器、并发、JVM、数据库、搜索引擎、系统
+
 [segement专栏: 镜心的小树屋](https://segmentfault.com/blog/jx-treehouse): 主要一些编程知识总结
 
 ## 微信公众号
 
+<b>柚子编程俱乐部</b>
+
+<b>镜心的小树屋</b>
 
 ## 读书笔记
 [《数据之巅》读后感与狂想!](https://zhuanlan.zhihu.com/p/23368515)
