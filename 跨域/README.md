@@ -40,7 +40,7 @@
 </html>
 ```
 
-#　cors
+# cors
 CORS背后的基本思想，就是使用自定义的HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是失败
 关键是要在服务器端进行配置； 分为两类:
 
@@ -115,6 +115,35 @@ router.get('/test',(req,res,next)=>{
 })
 
 ```
+# java 代码
+
+低版本安卓6,7webview会出现跨域
+现象： 进入页面空白，控制台不可用，网络请求为空，但可以审查到元素
+方案： 服务端更改了过滤器
+```
+/ Access
+        String origin = request.getHeader(ORIGIN);
+        if (origin == null) {
+            origin = request.getHeader(REFERER);
+        }
+        // 允许指定域访问跨域资源
+        setHeader(response, ACCESS_CONTROL_ALLOW_ORIGIN, origin);
+        // 允许客户端携带跨域cookie，此时origin值不能为“*”，只能为指定单一域名
+        setHeader(response, ACCESS_CONTROL_ALLOW_CREDENTIALS, TRUE);
+        if (RequestMethod.OPTIONS.toString().equals(request.getMethod())) {
+            String allowMethod = request.getHeader(ACCESS_CONTROL_REQUEST_METHOD);
+            String allowHeaders = request.getHeader(ACCESS_CONTROL_REQUEST_HEADERS);
+            // 浏览器缓存预检请求结果时间,单位:秒
+            setHeader(response, ACCESS_CONTROL_MAX_AGE, CACHE_86400);
+            // 允许浏览器在预检请求成功之后发送的实际请求方法名
+            setHeader(response, ACCESS_CONTROL_ALLOW_METHODS, allowMethod);
+            // 允许浏览器发送的请求消息头
+            setHeader(response, ACCESS_CONTROL_ALLOW_HEADERS, allowHeaders);
+            return;
+        }
+
+```
+![image](https://user-images.githubusercontent.com/21971405/184594501-8f10e141-679c-46ad-84ab-c45bcb5b693f.png)
 
 
 # 非简单请求
