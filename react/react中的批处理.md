@@ -174,6 +174,13 @@ function handleClick() {
 ```
 添加![img.png](img.png)
 ![img_1.png](img_1.png)
+
+# react 受控组件 
+1. 
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+# antd upload源码 
 # React的渲染模式
 eact 批处理方式的改变，主要是因为改变了渲染模式，React 目前有三种渲染模式
 
