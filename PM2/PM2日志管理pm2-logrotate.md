@@ -1,3 +1,10 @@
+---
+title: 请输入标题（若是回答的话，请删除本行）
+zhihu-url: 请输入知乎链接（删除本行发表新的知乎专栏文章）
+zhihu-title-image: 请输入专栏文章题图（若无需题图，删除本行）
+zhihu-tags: tag1, tag 2, tag-3, 标签4, 标签以半角逗号分隔, 只有知乎已经存在的标签才能添加成功
+注意: 所有的冒号是半角冒号，冒号后面有一个半角空格
+---
 
 - npm 源： 
 
@@ -27,3 +34,40 @@ pm2本身没有日志分割功能，日志只能存在一个文件中，时间�
 - workerInterval：设置启动几个工作进程监控日志尺寸，最小为1
 
 - rotateInterval：设置强制分割，默认值是0 0 * * *，意思是每天晚上0点分割
+
+# 常见操作
+```buildoutcfg
+pm2 conf pm2-logrotate
+```
+
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+
+# 看下项目里面会如何分割？
+
+我们来看一个next.js的项目，`pm2.config.js`文件如此配置
+
+```buildoutcfg
+module.exports = {
+    apps: [
+        {
+            name: 'next',
+            script: 'dist/server/index.js',
+            instances: +process.env.CODE_SERVER_WORKERS || 4, // 最多四个实例，在matrix上，无法获取容器实例规格，设置max，实例数会取宿主物理机cpu数量
+            cwd: './',
+            watch: false,
+            exec_mode: 'cluster',
+            log_date_format: 'YYYY-MM-DD HH:mm:ss SSS',
+            env: {
+                "NODE_ENV": "production",
+                "CODE_SERVER_ENV": "production"
+            },
+            error_file: '/home/work/log/pm2/app-err.log',
+            out_file: '/home/work/log/pm2/app-out.log',
+            merge_logs: true
+        }
+    ]
+};
+```
+
+![img_4.png](img_4.png)
