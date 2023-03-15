@@ -1,10 +1,4 @@
----
-title: 请输入标题（若是回答的话，请删除本行）
-zhihu-url: 请输入知乎链接（删除本行发表新的知乎专栏文章）
-zhihu-title-image: 请输入专栏文章题图（若无需题图，删除本行）
-zhihu-tags: tag1, tag 2, tag-3, 标签4, 标签以半角逗号分隔, 只有知乎已经存在的标签才能添加成功
-注意: 所有的冒号是半角冒号，冒号后面有一个半角空格
----
+原文阅读: [PM2日志管理pm2-logrotate](https://mp.weixin.qq.com/s?__biz=Mzg4MDY5NDU4NQ==&mid=2247485897&idx=1&sn=1a1d993c09d0800f8020f66cd6ae9fc9&chksm=cf700d9ff80784890471204c6a7a78719f5bf0bd66e8355a5e22a21559f0ae40d170ea9c9d7b&token=2085106552&lang=zh_CN#rd)
 
 - npm 源： 
 

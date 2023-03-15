@@ -1,7 +1,9 @@
 # coder学习笔记
+本仓库主要是前端方向的笔记和文章， 其他方向请看下面扩展
 
-## 简介
-个人学习记录
+关于前端 
+[前端你需要学什么？ 国内前端团队的技术栈统计](https://mp.weixin.qq.com/s?__biz=Mzg4MDY5NDU4NQ==&mid=2247485296&idx=1&sn=03907796805e11027f1e8a2e7db29519&chksm=cf700326f8078a30d16d25c2238c30d47a5d34a8b84d3234bff6ce621ab3b5917f1000a05fbf&token=2085106552&lang=zh_CN#rd)
+## 扩展
 
 [知乎专栏:和对象一起学编程](https://zhuanlan.zhihu.com/c_1069272612663902208): 主要讨论各种编程基础、面试试题等
 
@@ -46,7 +48,7 @@
 
 ## License
 
-MIT
+
 
 ---
 

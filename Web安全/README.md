@@ -1,0 +1,2 @@
+- [Web安全防护books](https://zhuanlan.zhihu.com/p/575781380)
+- [Web安全防护指南 - 常见漏洞与防护方法(一)](https://mp.weixin.qq.com/s?__biz=Mzg4MDY5NDU4NQ==&mid=2247485835&idx=1&sn=2d98b4b8b9e82ac338e74c8713e9ade9&chksm=cf700dddf80784cb828a803c518b273d07ee85e0f2d505da9dfe4701f953c25fc09bbddbce06&token=2085106552&lang=zh_CN#rd)
